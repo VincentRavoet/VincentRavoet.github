@@ -80,7 +80,7 @@ p {
 }
 
 .social-link {
-  @apply flex justify-center items-center w-10 h-10 bg-blue-600 rounded text-lg text-white duration-300;
+  @apply flex justify-center items-center w-20 h-20 bg-blue-600 rounded text-lg text-white duration-300;
 }
 .team-name {
   @apply text-gray-800 font-bold uppercase text-lg my-2;
@@ -132,7 +132,7 @@ p {
   @apply text-blue-500;
 }
 .footer-icon {
-  @apply flex justify-center items-center w-8 h-8 bg-white rounded-full text-sm text-gray-700 duration-300;
+  @apply flex justify-center items-center w-20 h-20 bg-white rounded-full text-5xl text-gray-700 duration-300;
 }
 .footer-icon:hover {
   @apply text-white;
