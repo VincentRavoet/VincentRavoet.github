@@ -6,6 +6,13 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+  .w-30 {
+    width: 30px;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }

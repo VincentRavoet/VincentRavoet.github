@@ -918,8 +918,8 @@ video {
   padding-top: 3rem;
 }
 
-.pt-24{
-  padding-top: 6rem;
+.pt-32{
+  padding-top: 8rem;
 }
 
 .fixed{
@@ -1078,6 +1078,10 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.w-30 {
+  width: 30px;
 }
 
 body {
