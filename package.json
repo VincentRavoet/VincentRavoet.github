@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css": "tailwind build src/style.css -o assets/css/tailwind.css",
+    "build:css2": "npx tailwindcss build src/style.css -o assets/css/tailwind.css --watch",
     "build": "postcss src/style.css -o assets/css/tailwind.css"
   },
   "keywords": [],

@@ -18,11 +18,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 .quote {
   font-family: 'Springfield', sans-serif;
-  font-size: 4.5rem;
   line-height: 0.9;
-  @apply pb-12 italic text-reviva_d-500;
+  @apply pb-16 italic text-reviva_d-500;
 }
 
 .quote > .accent {
@@ -76,16 +76,28 @@ p {
 }
 
 .disciplines {
-  @apply mb-12 ml-6 text-reviva_d-500;;
+  @apply mb-12 ml-6 text-reviva_d-500 pl-1;
 }
 
-.disciplines > li::before {
-  content: "O";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1.4em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+.disciplines > li::before, .experience > li::before {
+  content: "O";
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1.4em; 
+  margin-left: -1.4em; 
   @apply text-reviva_m-500
+}
+
+.experience {
+  @apply mb-12 text-reviva_d-500 pl-6;
+}
+
+.experience > li {
+  @apply pb-6
+}
+
+.experience > li > strong {
+  margin-left: -4px;
 }
 
 .icon {
@@ -107,7 +119,7 @@ p {
 }
 
 .profile-img {
-  @apply text-center shadow-2xl
+  @apply text-center shadow-2xl rounded-md;
 }
 
 .team-overlay {

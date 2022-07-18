@@ -1,5 +1,4 @@
 module.exports = {
-  mode: 'jit',
   purge: {
     enabled: true,
     content: [
@@ -55,6 +54,10 @@ module.exports = {
           '800': '#20423E',
           '900': '#0E1C1B'
         }
+      },
+      fontSize: {
+        '5xl': '3.5rem',
+        '7xl': '4.5rem'
       }
     },
   },
