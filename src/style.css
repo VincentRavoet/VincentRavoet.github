@@ -3,11 +3,6 @@
 
 @import url('https://fonts.cdnfonts.com/css/springfield');
 
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url()
-}
-
 @tailwind base;
 
 @tailwind components;
