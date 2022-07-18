@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
+@import url('http://fonts.cdnfonts.com/css/springfield');
+
 @tailwind base;
 
 @tailwind components;
@@ -16,6 +18,17 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+.quote {
+  font-family: 'Springfield', sans-serif;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  @apply pb-12 italic text-reviva_d-500;
+}
+
+.quote > .accent {
+  @apply text-reviva_m-500;
+}
+
 p {
   @apply text-gray-600;
 }
@@ -60,6 +73,19 @@ p {
 }
 .section-heading {
   @apply text-4xl font-bold tracking-wide;
+}
+
+.disciplines {
+  @apply mb-12 ml-6 text-reviva_d-500;;
+}
+
+.disciplines > li::before {
+  content: "O";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.4em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  @apply text-reviva_m-500
 }
 
 .icon {

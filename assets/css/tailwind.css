@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
+@import url('http://fonts.cdnfonts.com/css/springfield');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -770,10 +772,6 @@ video {
   height: 6rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .text-sm{
   font-size: 0.875rem;
 }
@@ -802,10 +800,6 @@ video {
   margin: 3rem;
 }
 
-.m-32{
-  margin: 8rem;
-}
-
 .m-auto{
   margin: auto;
 }
@@ -823,6 +817,16 @@ video {
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mx-12{
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .mx-auto{
@@ -922,6 +926,14 @@ video {
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .pb-10{
@@ -1093,6 +1105,23 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.quote {
+  font-family: 'Springfield', sans-serif;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  padding-bottom: 3rem;
+  font-style: italic;
+  --text-opacity: 1;
+  color: #1E3E50;
+  color: rgba(30, 62, 80, var(--text-opacity));
+}
+
+.quote > .accent {
+  --text-opacity: 1;
+  color: #5BAFA7;
+  color: rgba(91, 175, 167, var(--text-opacity));
+}
+
 p {
   --text-opacity: 1;
   color: #718096;
@@ -1199,6 +1228,25 @@ p {
   font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: 0.025em;
+}
+
+.disciplines {
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  --text-opacity: 1;
+  color: #1E3E50;
+  color: rgba(30, 62, 80, var(--text-opacity));
+}
+
+.disciplines > li::before {
+  content: "O";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.4em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  --text-opacity: 1;
+  color: #5BAFA7;
+  color: rgba(91, 175, 167, var(--text-opacity))
 }
 
 .icon {
@@ -1546,6 +1594,16 @@ p {
 
   .md\:h-screen{
     height: 100vh;
+  }
+
+  .md\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .md\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .md\:px-10{
