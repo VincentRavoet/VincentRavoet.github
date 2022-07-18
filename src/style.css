@@ -51,7 +51,7 @@ p {
   top: -8px;
   transform: rotate(135deg);
 }
-.page-scroll {
+.page-scroll, .page-link {
   @apply block px-5 py-2 uppercase text-reviva_d-500 duration-300 font-semibold;
 }
 .page-scroll.active,
@@ -79,6 +79,11 @@ p {
 .team-item:hover {
   @apply shadow-2xl cursor-pointer;
 }
+
+.profile-img {
+  @apply text-center shadow-2xl
+}
+
 .team-overlay {
   @apply w-full h-full flex items-center justify-center absolute top-0 left-0 bg-gray-200 duration-300 opacity-0;
 }

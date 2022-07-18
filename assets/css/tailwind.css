@@ -624,6 +624,12 @@ video {
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
+.bg-green-500{
+  --bg-opacity: 1;
+  background-color: #48bb78;
+  background-color: rgba(72, 187, 120, var(--bg-opacity));
+}
+
 .bg-reviva_d-500{
   --bg-opacity: 1;
   background-color: #1E3E50;
@@ -764,6 +770,10 @@ video {
   height: 6rem;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .text-sm{
   font-size: 0.875rem;
 }
@@ -790,6 +800,10 @@ video {
 
 .m-12{
   margin: 3rem;
+}
+
+.m-32{
+  margin: 8rem;
 }
 
 .m-auto{
@@ -934,11 +948,6 @@ video {
   position: relative;
 }
 
-.sticky{
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .top-0{
   top: 0;
 }
@@ -1080,10 +1089,6 @@ video {
   transition-duration: 300ms;
 }
 
-.w-30 {
-  width: 30px;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -1168,7 +1173,7 @@ p {
   transform: rotate(135deg);
 }
 
-.page-scroll {
+.page-scroll, .page-link {
   display: block;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1237,6 +1242,11 @@ p {
 .team-item:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.profile-img {
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25)
 }
 
 .team-overlay {
@@ -1464,6 +1474,14 @@ p {
     .sm\:container{
       max-width: 1280px;
     }
+  }
+
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:pt-0{
