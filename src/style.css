@@ -80,7 +80,8 @@ p {
 }
 
 .avatar {
-  @apply bg-reviva_m-200 rounded-full shadow-2xl;
+  max-width: 500px;
+  @apply mx-auto w-2/3 bg-reviva_m-200 rounded-full shadow-2xl;
 }
 
 .avatar > img {

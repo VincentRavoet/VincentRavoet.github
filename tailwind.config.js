@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: {
     enabled: true,
     content: [
@@ -56,8 +57,10 @@ module.exports = {
         }
       },
       fontSize: {
+        '4xl': '3rem',
         '5xl': '3.5rem',
-        '7xl': '4.5rem'
+        '7xl': '4.5rem',
+        '8xl': '5.5rem'
       }
     },
   },
