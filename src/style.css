@@ -117,15 +117,23 @@ p {
 }
 
 .icon {
-  @apply mb-4 text-reviva_d-500 text-5xl;
+  @apply mb-4 text-5xl text-center;
+}
+
+.discipline {
+  @apply w-full ease-linear transition-all duration-100 rounded-md text-reviva_d-500;
+}
+
+.discipline:hover {
+  @apply text-reviva_m-500 cursor-pointer;
 }
 
 .service-title {
-  @apply text-gray-800 font-semibold text-lg block mb-3 uppercase;
+  @apply text-center font-semibold text-sm block mb-3 uppercase;
 }
 
 .feature-title {
-  @apply text-gray-800 font-medium block mb-3;
+  @apply text-reviva_d-500 font-medium block mb-3;
 }
 .team-item {
   @apply m-8 text-center bg-white shadow duration-300;
