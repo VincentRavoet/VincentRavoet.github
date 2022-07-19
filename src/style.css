@@ -79,6 +79,21 @@ p {
   @apply mb-12 ml-6 text-reviva_d-500 pl-1;
 }
 
+.avatar {
+  @apply bg-reviva_m-200 rounded-full shadow-2xl;
+}
+
+.avatar > img {
+  filter: grayscale(100%);
+  @apply mb-8 rounded-full opacity-50 ease-linear transition-all duration-150;
+}
+
+.avatar > img:hover {
+  filter: grayscale(0);
+  @apply opacity-100 cursor-pointer;
+}
+
+
 .disciplines > li::before, .experience > li::before {
   content: "O";
   font-weight: bold; 
@@ -119,7 +134,7 @@ p {
 }
 
 .profile-img {
-  @apply text-center shadow-2xl rounded-md;
+  @apply text-center rounded-md;
 }
 
 .team-overlay {
