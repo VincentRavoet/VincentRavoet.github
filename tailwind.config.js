@@ -4,7 +4,8 @@ module.exports = {
     enabled: true,
     content: [
       '*.{html,js}',
-      './team/*.html'
+      './team/*.html',
+      "./node_modules/flowbite/**/*.js"
     ]
   },
   theme: {
@@ -44,6 +45,7 @@ module.exports = {
         },
         reviva_m: {
           DEFAULT: '#5BAFA7',
+          '25': '#E4F2F1',
           '50': '#D6EBE9',
           '100': '#C9E5E2',
           '200': '#ADD7D3',
@@ -65,5 +67,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }

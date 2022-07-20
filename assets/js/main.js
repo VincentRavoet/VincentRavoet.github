@@ -14,18 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
       //   document.querySelector('#preloader').style.display = 'none';
       // }
 
-
-      /*=====================================
-      Sticky
-      ======================================= */
-      window.onscroll = function () {
+      function loaded() {
         var header_navbar = document.querySelector(".navigation");
+        var appointment_button = document.querySelector('.appointment-button');
         var sticky = header_navbar.offsetTop;
 
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
+          appointment_button.classList.add('sm:block');
+          appointment_button.classList.remove('sm:hidden');
         } else {
           header_navbar.classList.remove("sticky");
+          appointment_button.classList.add('sm:hidden');
+          appointment_button.classList.remove('sm:block');
         }
 
 
@@ -37,7 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
           backToTop.style.display = "none";
         }
-      };
+      }
+
+
+      /*=====================================
+      Sticky
+      ======================================= */
+      window.onscroll = loaded;
 
       // Get the navbar
 
@@ -136,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobile: false
       });
       wow.init();
+      loaded();
 
 })();
 })
