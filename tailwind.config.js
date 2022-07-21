@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         reviva_d: {
           DEFAULT: '#1E3E50',
+          '25': '#9DC5DA',
           '50': '#62A1C4',
           '100': '#5398BE',
           '200': '#3F83A9',

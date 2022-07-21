@@ -96,18 +96,29 @@ p {
 }
 
 .avatar {
-  max-width: 500px;
-  @apply mx-auto w-2/3 bg-reviva_m-200 rounded-full shadow-2xl;
+  @apply mx-auto w-2/3 bg-reviva_d-50 rounded-full shadow-2xl;
 }
 
-.avatar > img {
-  filter: grayscale(100%);
+.avatar > a > img {
   @apply mb-8 rounded-full opacity-50 ease-linear transition-all duration-150;
 }
 
-.avatar > img:hover {
-  filter: grayscale(0);
+@media (max-width: 768px) {
+  .avatar {
+    background-color: white;
+  }
+  .avatar > a > img {
+    opacity: 1;
+  }
+}
+
+.avatar > a > img:hover {
   @apply opacity-100 cursor-pointer;
+}
+
+.more-link {
+  margin-left: -5px;
+  @apply text-reviva_m-500;
 }
 
 .disciplines > li::before, .experience > li::before {
@@ -158,7 +169,7 @@ p {
 }
 
 .profile-img {
-  @apply text-center rounded-md;
+  @apply text-center rounded-lg;
 }
 
 .team-overlay {
