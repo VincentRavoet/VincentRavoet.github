@@ -16,17 +16,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
       function loaded() {
         var header_navbar = document.querySelector(".navigation");
-        var appointment_button = document.querySelector('.appointment-button');
+        var appear = document.querySelectorAll('.appear-on-scroll');
         var sticky = header_navbar.offsetTop;
 
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
-          appointment_button.classList.add('sm:block');
-          appointment_button.classList.remove('sm:hidden');
+
+          appear.forEach(e => {
+            e.classList.add('sm:block');
+            e.classList.remove('sm:hidden');
+          });
         } else {
           header_navbar.classList.remove("sticky");
-          appointment_button.classList.add('sm:hidden');
-          appointment_button.classList.remove('sm:block');
+
+          appear.forEach(e => {
+            e.classList.add('sm:hidden');
+            e.classList.remove('sm:block');
+          });
         }
 
 
@@ -55,9 +61,15 @@ document.addEventListener('DOMContentLoaded', function() {
       pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
           e.preventDefault();
-          document.querySelector(elem.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            offsetTop: 1 - 60,
+
+          var element = document.querySelector(elem.getAttribute('href'));
+          var headerOffset = 126;
+          var elementPosition = element.getBoundingClientRect().top;
+          var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+               top: offsetPosition,
+               behavior: "smooth"
           });
         });
       });
@@ -71,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
           var currLink = sections[i];
           var val = currLink.getAttribute('href');
           var refElement = document.querySelector(val);
-          var scrollTopMinus = scrollPos + 73;
+          var scrollTopMinus = scrollPos + 200;
           if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
             document.querySelector('.page-scroll').classList.remove('active');
             currLink.classList.add('active');

@@ -23,14 +23,29 @@ body {
   letter-spacing: 1px;
 }
 
-.welcome-picture {
-  margin-left: 50px; 
-  margin-right: -50px;
+@media (min-width: 1024px) {
+  .welcome-picture {
+    margin-left: 50px; 
+    margin-right: -50px;
+  }
+  
+  .welcome-text {
+    margin-left: -50px; 
+    margin-right: 50px;
+    background-color: rgba(255,255,255,0.6);
+  }  
+}
+
+@media (max-width: 1024px) {
+  #home {
+    background-image: url('../img/team/team_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .welcome-text {
-  margin-left: -50px; 
-  margin-right: 50px;
   background-color: rgba(255,255,255,0.6);
 }
 
@@ -84,15 +99,16 @@ p {
   @apply block px-5 py-2 uppercase text-reviva_d-500 duration-300 font-semibold;
 }
 .page-scroll.active,
-.page-scroll:hover {
-  @apply text-reviva_m-500 font-semibold;
+.page-scroll:hover,
+.page-link:hover {
+  @apply text-reviva_m-500 font-semibold cursor-pointer;
 }
 .section-heading {
   @apply text-4xl font-bold tracking-wide;
 }
 
 .disciplines {
-  @apply mb-12 ml-6 text-reviva_d-500 pl-1;
+  @apply mb-12 ml-6 text-reviva_d-500 pl-1 text-left text-lg;
 }
 
 .avatar {

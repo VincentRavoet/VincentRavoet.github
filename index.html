@@ -74,116 +74,30 @@
                   <a class="page-scroll active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="page-scroll"
-                    href="#team"
-                    data-dropdown-toggle="team_dropdown"
-                    data-dropdown-placement="bottom-start"
-                    >Team <i class="fa-solid fa-angle-down"></i
-                  ></a>
-                  <div
-                    id="team_dropdown"
-                    class="hidden z-10 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
-                  >
-                    <ul
-                      class="py-1 text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="doubleDropdownButton"
-                    >
-                      <li>
-                        <a
-                          href="./team/lucia.html"
-                          class="flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="./assets/img/team/lucia_avatar.png"
-                            alt=""
-                          />
-                          Lucia Vanden Eynde</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./team/elien.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="./assets/img/team/elien_avatar.png"
-                            alt=""
-                          />Elien De Vos</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./team/yves.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="./assets/img/team/yves_avatar.png"
-                            alt=""
-                          />Yves Delaere</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./team/elke.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="./assets/img/team/elke_avatar.png"
-                            alt=""
-                          />Elke Parton</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./team/lotte.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="./assets/img/team/lotte_avatar.png"
-                            alt=""
-                          />Lotte Hendrickx</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./team/charlotte.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="./assets/img/team/charlotte_avatar.png"
-                            alt=""
-                          />Charlotte De Meersman</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+                  <a class="page-scroll" href="#disciplines">Disciplines</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#disciplines">Disciplines</a>
+                  <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="#contact">Contact</a>
                 </li>
-                <li class="nav-item appointment-button hidden">
+                <li class="nav-item appear-on-scroll hidden">
                   <a
                     href="https://altagenda.crossuite.com/praktijkreviva/"
                     target="_blank"
-                    class="text-lg bg-reviva_d-500 text-white hover:bg-reviva_m-500 font-bold uppercase lg:ml-12 px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    class="md:text-sm bg-reviva_d-500 text-white hover:bg-reviva_m-500 uppercase px-5 lg:mx-8 py-3 rounded-full mr-1 mb-1 ease-linear transition-all duration-150"
                     >Maak een afspraak</a
                   >
+                </li>
+                <li class="nav-item appear-on-scroll hidden px-5">
+                  <p>
+                    <i class="fas fa-phone text-reviva_m-500"></i> 016 41 42 50
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope text-reviva_m-500"></i>
+                    info@praktijkreviva.be
+                  </p>
                 </li>
               </ul>
             </div>
@@ -197,22 +111,15 @@
     <!-- Hero Area Start -->
     <section
       id="home"
-      class="bg-reviva_l-500"
-      style="
-        background: rgb(243, 237, 235);
-        background: linear-gradient(
-          180deg,
-          rgba(243, 237, 235, 1) 50%,
-          rgba(255, 255, 255, 1) 100%
-        );
-      "
+      class="bg-reviva_l-500 sm:h-screen flex flex-wrap justify-center items-center"
+      style="background-color: rgb(243, 237, 235)"
     >
       <div
-        class="container grid grid-cols-1 sm:grid-cols-2 p-32 wow fadeIn"
+        class="container grid grid-cols-1 sm:grid-cols-2 pt-32 wow fadeIn"
         data-wow-delay="0.5s"
       >
         <img
-          class="shadow-2xl welcome-picture rounded-full border-reviva_m-500 hidden sm:block"
+          class="shadow-2xl welcome-picture rounded-full border-reviva_m-500 hidden lg:block"
           src="assets/img/team/team_avatar.png"
           alt="Logo"
         />
@@ -232,7 +139,7 @@
               <img class="w-2/5" src="assets/img/logo_reviva_2.png" alt="" />
             </div>
             <p
-              class="text-sm block sm:hidden md:block text-center lg:text-lg mx-4 md:mx-12 lg:mx-28 pt-8 lg:pt-12"
+              class="text-sm hidden lg:block text-center lg:text-lg mx-4 md:mx-12 lg:mx-28 pt-8"
             >
               De multidisciplinaire groepspraktijk <br />in Lovenjoel, waar
               <br />
@@ -244,158 +151,23 @@
               <a
                 href="https://altagenda.crossuite.com/praktijkreviva/"
                 target="_blank"
-                class="text-sm lg:text-lg border border-reviva_d-500 bg-reviva_d-500 text-white hover:bg-reviva_m-500 hover:border-reviva_m-500 active:bg-reviva_d-500 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                class="text-lg bg-reviva_d-500 text-white hover:bg-reviva_m-500 uppercase px-8 py-3 rounded-full mb-3 ease-linear transition-all duration-150"
                 type="button"
               >
                 Maak een afspraak
               </a>
+              <p>of contacteer ons via</p>
+              <p><i class="fas fa-phone text-reviva_m-500"></i> 016 41 42 50</p>
+              <p>
+                <i class="fas fa-envelope text-reviva_m-500"></i>
+                info@praktijkreviva.be
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Hero Area End -->
-
-    <!-- Team Section Start -->
-    <section id="team" class="py-12">
-      <div class="container text-center">
-        <p class="mb-16 section-heading text-7xl text-reviva_d-500">Ons team</p>
-      </div>
-      <div class="container grid gap-12 grid-cols-1 md:grid-cols-3">
-        <div>
-          <div class="avatar">
-            <a href="./team/lucia.html">
-              <img src="../assets/img/team/lucia_avatar.png" alt="" />
-            </a>
-          </div>
-          <p class="text-center mb-8 text-xl">Lucia Vanden Eynde</p>
-          <div class="flex flex-wrap justify-center">
-            <div class="w-4/5">
-              <ul
-                class="disciplines wow fadeInLeft text-left text-sm lg:text-lg"
-              >
-                <li>Algemene kinesitherapie</li>
-                <li>Orthomoleculaire therapie</li>
-                <li>Stressmanagement</li>
-                <li>
-                  <a href="./team/lucia.html" class="more-link">Meer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="avatar">
-            <a href="./team/elien.html">
-              <img src="../assets/img/team/elien_avatar.png" alt="" />
-            </a>
-          </div>
-          <p class="text-center mb-8 text-xl">Elien De Vos</p>
-          <div class="flex flex-wrap justify-center">
-            <div class="w-4/5">
-              <ul
-                class="disciplines wow fadeInLeft text-left text-sm lg:text-lg"
-              >
-                <li>Algemene kinesitherapie</li>
-                <li>Orthomoleculaire therapie</li>
-                <li>Stressmanagement</li>
-                <li>
-                  <a href="./team/elien.html" class="more-link">Meer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="avatar">
-            <a href="./team/yves.html">
-              <img src="../assets/img/team/yves_avatar.png" alt="" />
-            </a>
-          </div>
-          <p class="text-center mb-8 text-xl">Yves Delaere</p>
-          <div class="flex flex-wrap justify-center">
-            <div class="w-4/5">
-              <ul
-                class="disciplines wow fadeInLeft text-left text-sm lg:text-lg"
-              >
-                <li>Algemene kinesitherapie</li>
-                <li>Orthomoleculaire therapie</li>
-                <li>Stressmanagement</li>
-                <li>
-                  <a href="./team/yves.html" class="more-link">Meer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="avatar">
-            <a href="./team/elke.html">
-              <img src="../assets/img/team/elke_avatar.png" alt="" />
-            </a>
-          </div>
-          <p class="text-center mb-8 text-xl">Elke Parton</p>
-          <div class="flex flex-wrap justify-center">
-            <div class="w-4/5">
-              <ul
-                class="disciplines wow fadeInLeft text-left text-sm lg:text-lg"
-              >
-                <li>Algemene kinesitherapie</li>
-                <li>Orthomoleculaire therapie</li>
-                <li>Stressmanagement</li>
-                <li>
-                  <a href="./team/elke.html" class="more-link">Meer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="avatar">
-            <a href="./team/lotte.html">
-              <img src="../assets/img/team/lotte_avatar.png" alt="" />
-            </a>
-          </div>
-          <p class="text-center mb-8 text-xl">Lotte Hendrickx</p>
-          <div class="flex flex-wrap justify-center">
-            <div class="w-4/5">
-              <ul
-                class="disciplines wow fadeInLeft text-left text-sm lg:text-lg"
-              >
-                <li>Algemene kinesitherapie</li>
-                <li>Orthomoleculaire therapie</li>
-                <li>Stressmanagement</li>
-                <li>
-                  <a href="./team/lotte.html" class="more-link">Meer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="avatar">
-            <a href="./team/charlotte.html">
-              <img src="../assets/img/team/charlotte_avatar.png" alt="" />
-            </a>
-          </div>
-          <p class="text-center mb-8 text-xl">Charlotte De Meersman</p>
-          <div class="flex flex-wrap justify-center">
-            <div class="w-4/5">
-              <ul
-                class="disciplines wow fadeInLeft text-left text-sm md:text-md lg:text-lg"
-              >
-                <li>Algemene kinesitherapie</li>
-                <li>Orthomoleculaire therapie</li>
-                <li>Stressmanagement</li>
-                <li>
-                  <a href="./team/charlotte.html" class="more-link">Meer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Services Section Start -->
     <section id="disciplines" class="py-24 bg-reviva_m-25">
@@ -461,7 +233,7 @@
           <div class="discipline">
             <div class="m-12 wow fadeInDown" data-wow-delay="0.5s">
               <div class="icon">
-                <i class="fa-solid fa-syringe"></i>
+                <i class="fa-solid fa-feather-pointed"></i>
               </div>
               <div>
                 <h3 class="service-title sm:text-lg">Dry needling</h3>
@@ -485,6 +257,128 @@
       </div>
     </section>
     <!-- Services Section End -->
+
+    <!-- Team Section Start -->
+    <section id="team" class="py-12">
+      <div class="container text-center">
+        <p class="mb-16 section-heading text-7xl text-reviva_d-500">Ons team</p>
+      </div>
+      <div class="container grid gap-12 grid-cols-1 md:grid-cols-3">
+        <div>
+          <div class="avatar">
+            <a href="./team/lucia.html">
+              <img src="../assets/img/team/lucia_avatar.png" alt="" />
+            </a>
+          </div>
+          <p class="text-center mb-8 text-xl">Lucia Vanden Eynde</p>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-4/5">
+              <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
+                <li>Algemene kinesitherapie</li>
+                <li>Dry needling</li>
+                <li>Zwangerschaps-<br />begeleiding</li>
+                <li>
+                  <a href="./team/lucia.html" class="more-link">Meer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="avatar">
+            <a href="./team/elien.html">
+              <img src="../assets/img/team/elien_avatar.png" alt="" />
+            </a>
+          </div>
+          <p class="text-center mb-8 text-xl">Elien De Vos</p>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-4/5">
+              <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
+                <li>Algemene kinesitherapie</li>
+                <li>Orthomoleculaire therapie</li>
+                <li>Stressmanagement</li>
+                <li>
+                  <a href="./team/elien.html" class="more-link">Meer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="avatar">
+            <a href="./team/yves.html">
+              <img src="../assets/img/team/yves_avatar.png" alt="" />
+            </a>
+          </div>
+          <p class="text-center mb-8 text-xl">Yves Delaere</p>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-4/5">
+              <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
+                <li>Sportkinesitherapie</li>
+                <li>Algemene kinesitherapie</li>
+                <li>Dry needling</li>
+                <li>
+                  <a href="./team/yves.html" class="more-link">Meer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="avatar">
+            <a href="./team/elke.html">
+              <img src="../assets/img/team/elke_avatar.png" alt="" />
+            </a>
+          </div>
+          <p class="text-center mb-8 text-xl">Elke Parton</p>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-4/5">
+              <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
+                <li>Vroedkunde</li>
+                <li>Zwangerschaps-<br />begeleiding</li>
+                <li>
+                  <a href="./team/elke.html" class="more-link">Meer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="avatar">
+            <a href="./team/lotte.html">
+              <img src="../assets/img/team/lotte_avatar.png" alt="" />
+            </a>
+          </div>
+          <p class="text-center mb-8 text-xl">Lotte Hendrickx</p>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-4/5">
+              <ul
+                class="disciplines wow fadeInLeft md:text-base lg:text-lg"
+              ></ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="avatar">
+            <a href="./team/charlotte.html">
+              <img src="../assets/img/team/charlotte_avatar.png" alt="" />
+            </a>
+          </div>
+          <p class="text-center mb-8 text-xl">Charlotte De Meersman</p>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-4/5">
+              <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
+                <li>Personal training</li>
+                <li>Personal coaching</li>
+                <li>
+                  <a href="./team/charlotte.html" class="more-link">Meer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonial Section Start -->
     <!-- <section id="reviews" class="py-24 bg-reviva_d-500">
@@ -569,7 +463,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center my-12">
         <div class="text-reviva_d-500">
           <div class="flex items-center justify-center pb-10">
             <img class="w-2/5" src="assets/img/logo_reviva_2.png" alt="" />
@@ -578,8 +472,8 @@
             Tiensesteenweg 350 <br />
             3360 Bierbeek
           </p>
-          <p>Tel. 016 41 42 50</p>
-          <a href="mailto:info@praktijkreviva.be">info@praktijkreviva.be</a>
+          <p>016 41 42 50</p>
+          <p>info@praktijkreviva.be</p>
         </div>
       </div>
     </section>
@@ -591,15 +485,18 @@
         <div class="flex flex-wrap">
           <div class="w-full text-center sm:text-left sm:w-1/3 mb-8 sm:mb-0">
             <div class="mx-3 mb-8">
-              <p class="text-3xl text-gray-300">PRAKTIJK REVIVA</p>
+              <p class="text-3xl text-white">PRAKTIJK REVIVA</p>
               <p class="text-gray-300">
                 Tiensesteenweg 350 <br />
                 3360 Bierbeek
               </p>
-              <p class="text-gray-300">Tel. 016 41 42 50</p>
-              <a href="mailto:info@praktijkreviva.be" class="text-gray-300"
-                >info@praktijkreviva.be</a
-              >
+              <p class="text-gray-300">
+                <i class="fas fa-phone text-reviva_m-500"></i> 016 41 42 50
+              </p>
+              <p class="text-gray-300">
+                <i class="fas fa-envelope text-reviva_m-500"></i>
+                info@praktijkreviva.be
+              </p>
             </div>
           </div>
 
