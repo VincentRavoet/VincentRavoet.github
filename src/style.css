@@ -38,15 +38,11 @@ body {
 
 @media (max-width: 1024px) {
   #home {
-    background-image: url('../img/team/team_background.jpg');
+    background: url('../img/team/team_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-
-.welcome-text {
-  background-color: rgba(255,255,255,0.6);
 }
 
 .quote {

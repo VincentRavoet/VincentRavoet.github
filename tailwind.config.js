@@ -15,6 +15,7 @@ module.exports = {
       },
       screens: {
         'xxs': '540px', // min-width
+        '2xl': '1536px', // min-width
       },
       colors: {
         reviva_d: {
@@ -33,11 +34,11 @@ module.exports = {
         },
         reviva_l: {
           DEFAULT: '#F3EDEB',
-          '50': '#F3EDEB',
-          '100': '#F3EDEB',
-          '200': '#F3EDEB',
-          '300': '#F3EDEB',
-          '400': '#F3EDEB',
+          '50': '#fffafa',
+          '100': '#fffafa',
+          '200': '#fffafa',
+          '300': 'rgb(248,249,250)',
+          '400': '#fffafa',
           '500': '#F3EDEB',
           '600': '#F3EDEB',
           '700': '#F3EDEB',

@@ -1155,6 +1155,10 @@ input:checked + .toggle-bg{
   height: 2.5rem;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .h-24{
   height: 6rem;
 }
@@ -1452,9 +1456,9 @@ input:checked + .toggle-bg{
   background-color: rgb(15 30 39 / var(--tw-bg-opacity));
 }
 
-.bg-reviva_m-25{
+.bg-reviva_l-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(228 242 241 / var(--tw-bg-opacity));
+  background-color: rgb(255 250 250 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200{
@@ -1577,16 +1581,20 @@ input:checked + .toggle-bg{
   padding-top: 2rem;
 }
 
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pb-4{
   padding-bottom: 1rem;
 }
 
 .pb-12{
   padding-bottom: 3rem;
-}
-
-.pt-2{
-  padding-top: 0.5rem;
 }
 
 .text-left{
@@ -1818,15 +1826,11 @@ body {
 
 @media (max-width: 1024px) {
   #home {
-    background-image: url('../img/team/team_background.jpg');
+    background: url('../img/team/team_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-
-.welcome-text {
-  background-color: rgba(255,255,255,0.6);
 }
 
 .quote {
@@ -2471,10 +2475,6 @@ p{
     display: none;
   }
 
-  .sm\:h-screen{
-    height: 100vh;
-  }
-
   .sm\:w-1\/3{
     width: 33.333333%;
   }
@@ -2483,12 +2483,12 @@ p{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:pt-56{
@@ -2624,5 +2624,18 @@ p{
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:shadow-2xl{
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
