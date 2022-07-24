@@ -92,7 +92,7 @@ p {
   transform: rotate(135deg);
 }
 .page-scroll, .page-link {
-  @apply block px-5 py-2 uppercase text-reviva_d-500 duration-300 font-semibold;
+  @apply inline-block px-5 py-2 uppercase text-reviva_d-500 duration-300 font-semibold;
 }
 .page-scroll.active,
 .page-scroll:hover,

@@ -77,20 +77,18 @@
             >
               <ul
                 class="navbar-nav mr-auto justify-center items-center lg:flex"
+                data-accordion="collapse"
               >
                 <li class="nav-item">
                   <a class="page-link active" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="page-link"
-                    data-dropdown-toggle="team_dropdown"
-                    data-dropdown-placement="bottom-start"
+                <li class="nav-item" data-active-classes="text-reviva_m-500">
+                  <a id="team_accordion_head" class="page-link" data-accordion-target="#team_accordion_body" aria-expanded="false" aria-controls="team_accordion_body"
                     >Team <i class="fa-solid fa-angle-down"></i
                   ></a>
                   <div
-                    id="team_dropdown"
-                    class="hidden z-10 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                    id="team_accordion_body" aria-labelledby="team_accordion_head"
+                    class="hidden lg:absolute bg-white rounded"
                   >
                     <ul
                       class="py-1 text-sm text-gray-700 dark:text-gray-200"
@@ -178,8 +176,95 @@
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <a class="page-link" href="../index.html#disciplines">Disciplines</a>
+                <li class="nav-item" data-active-classes="text-reviva_m-500">
+                  <a id="displines_accordion_head" class="page-link" data-accordion-target="#displines_accordion_body" aria-expanded="false" aria-controls="displines_accordion_body"
+                    >Disciplines <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div
+                    id="displines_accordion_body" aria-labelledby="displines_accordion_head"
+                    class="hidden lg:absolute bg-white rounded"
+                  >
+                    <ul
+                      class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="doubleDropdownButton"
+                    >
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        >
+                          <div class="w-1/5 text-center">
+                            <i class="fa-solid fa-wheelchair-move text-3xl"></i>
+                          </div>
+                          <div class="w-4/5">
+                            Kinesitherapie
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        >
+                        <div class="w-1/5 text-center">
+                          <i class="fa-solid fa-people-group text-3xl" style="width: 30px"></i>
+                        </div>
+                        <div class="w-4/5">
+                          Groepslessen
+                        </div>
+                      </a>
+                      </li>
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        >
+                        <div class="w-1/5 text-center">
+                          <i class="fa-solid fa-baby text-3xl" style="width: 30px"></i>
+                        </div>
+
+                          <div class="w-4/5">
+                            Vroedkunde
+                          </div></a>
+                      </li>
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        ><div class="w-1/5 text-center">
+                        <i class="fa-solid fa-balance-scale text-3xl" style="width: 30px"></i>
+                          </div>
+                          <div class="w-4/5">
+                          Orthomoleculaire Therapie</div></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        ><div class="w-1/5 text-center">
+                        <i class="fa-solid fa-feather-pointed text-3xl" style="width: 30px"></i>
+                          </div>
+                          <div class="w-4/5">
+                          Dry needling</div></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        ><div class="w-1/5 text-center">
+                        <i class="fa-solid fa-person-breastfeeding text-3xl" style="width: 30px"></i>
+                          </div>
+                          <div class="w-4/5">
+                          Pre- en postnatale Kinesitherapie
+                          </div></a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="page-link" href="../index.html#contact">Contact</a>
@@ -203,8 +288,7 @@
 
     <!-- Hero Area Start -->
     <section id="welkom" class="bg-reviva_l-500 pb-10" style="
-    background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)
-  ">
+    background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
       <div class="container grid grid-cols-1 md:grid-cols-2 pt-32 sm:pt-56">
         <div class="flex flex-wrap items-center justify-center mx-8 mb-12">
           <img
