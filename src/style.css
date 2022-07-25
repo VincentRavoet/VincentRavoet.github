@@ -11,6 +11,11 @@
 
 @tailwind utilities;
 
+@font-face {
+font-family: "VisbyRoundCF";
+src: url("../fonts/VisbyRoundCF-Regular.otf");
+}
+
 @layer utilities {
   .w-30 {
     width: 30px;
@@ -18,9 +23,12 @@
 }
 
 body {
-  font-family: 'Visby', sans-serif;
-  font-weight: 700;
+  font-family: 'VisbyRoundCF', sans-serif;
   letter-spacing: 1px;
+}
+
+b, strong {
+  font-size: 1.1rem;
 }
 
 @media (min-width: 1024px) {
@@ -115,7 +123,7 @@ p {
   @apply mb-8 rounded-full opacity-50 ease-linear transition-all duration-150;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .avatar {
     background-color: white;
   }
@@ -156,6 +164,11 @@ p {
 
 .icon {
   @apply mb-4 text-5xl text-center;
+}
+
+.discipline:hover svg > line, .discipline:hover svg > path {
+  stroke: #5BAFA7;
+  @apply text-reviva_m-500 cursor-pointer;
 }
 
 .discipline {
