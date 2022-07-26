@@ -38,12 +38,12 @@
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
-    <header id="header-wrap" class="relative bg-dunes">
+    <header id="header-wrap" class="bg-dunes relative">
       <!-- Navbar Start -->
-      <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
+      <div class="navigation fixed top-0 left-0 z-30 w-full duration-300">
         <div class="container">
           <nav
-            class="navbar py-6 navbar-expand-lg flex justify-between items-center relative duration-300"
+            class="navbar navbar-expand-lg relative flex items-center justify-between py-6 duration-300"
           >
             <a class="navbar-brand" href="../index.html">
               <img class="hidden sm:block" src="../assets/img/brand.png" />
@@ -53,12 +53,12 @@
             <a
               href="https://altagenda.crossuite.com/praktijkreviva/"
               target="_blank"
-              class="block lg:hidden text-sm border border-reviva_d-500 bg-reviva_d-500 text-white hover:bg-reviva_m-500 hover:border-reviva_m-500 active:bg-reviva_d-500 font-bold uppercase px-5 py-3 rounded-full outline-none focus:outline-none ease-linear transition-all duration-150"
+              class="block rounded-full border border-reviva_d-500 bg-reviva_d-500 px-5 py-3 text-sm font-bold uppercase text-white outline-none transition-all duration-150 ease-linear hover:border-reviva_m-500 hover:bg-reviva_m-500 focus:outline-none active:bg-reviva_d-500 lg:hidden"
               >Maak een afspraak</a
             >
 
             <button
-              class="navbar-toggler focus:outline-none block lg:hidden text-sm"
+              class="navbar-toggler block text-sm focus:outline-none lg:hidden"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -72,116 +72,17 @@
             </button>
 
             <div
-              class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none"
+              class="collapse navbar-collapse mt-full absolute top-100 left-0 z-20 hidden w-full bg-white px-5 py-3 shadow duration-300 lg:static lg:block lg:bg-transparent lg:shadow-none"
               id="navbarSupportedContent"
             >
               <ul
-                class="navbar-nav mr-auto justify-center items-center lg:flex"
+                class="navbar-nav mr-auto items-center justify-center lg:flex"
                 data-accordion="collapse"
               >
                 <li class="nav-item">
                   <a class="page-link active" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item" data-active-classes="text-reviva_m-500">
-                  <a
-                    id="team_accordion_head"
-                    class="page-link"
-                    data-accordion-target="#team_accordion_body"
-                    aria-expanded="false"
-                    aria-controls="team_accordion_body"
-                    >Team <i class="fa-solid fa-angle-down"></i
-                  ></a>
-                  <div
-                    id="team_accordion_body"
-                    aria-labelledby="team_accordion_head"
-                    class="hidden lg:absolute bg-white rounded"
-                  >
-                    <ul
-                      class="py-1 text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="doubleDropdownButton"
-                    >
-                      <li>
-                        <a
-                          href="./lucia.html"
-                          class="flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="../assets/img/team/lucia_avatar.png"
-                            alt=""
-                          />
-                          Lucia Vanden Eynde</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./elien.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="../assets/img/team/elien_avatar.png"
-                            alt=""
-                          />Elien De Vos</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./yves.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="../assets/img/team/yves_avatar.png"
-                            alt=""
-                          />Yves Delaere</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./elke.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="../assets/img/team/elke_avatar.png"
-                            alt=""
-                          />Elke Parton</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./lotte.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="../assets/img/team/lotte_avatar.png"
-                            alt=""
-                          />Lotte Hendrickx</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./charlotte.html"
-                          class="flex flex-wrap items-center block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <img
-                            style="width: 75px; margin-right: 10px"
-                            class="rounded-full"
-                            src="../assets/img/team/charlotte_avatar.png"
-                            alt=""
-                          />Charlotte De Meersman</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
+
                 <li class="nav-item" data-active-classes="text-reviva_m-500">
                   <a
                     id="displines_accordion_head"
@@ -194,7 +95,7 @@
                   <div
                     id="displines_accordion_body"
                     aria-labelledby="displines_accordion_head"
-                    class="hidden lg:absolute bg-white rounded"
+                    class="hidden rounded bg-white lg:absolute"
                   >
                     <ul
                       class="py-1 text-sm text-gray-700 dark:text-gray-200"
@@ -206,52 +107,12 @@
                           class="flex flex-wrap items-center py-2 hover:bg-gray-100"
                         >
                           <div class="w-1/5 text-center">
-                            <i class="fa-solid fa-wheelchair-move text-2xl"></i>
+                            <i
+                              class="fa-solid fa-hand-holding-heart text-2xl"
+                            ></i>
                           </div>
                           <div class="w-4/5">Kinesitherapie</div>
                         </a>
-                      </li>
-                      <li>
-                        <a
-                          href="../disciplines/groepslessen.html"
-                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
-                        >
-                          <div class="w-1/5 text-center">
-                            <i
-                              class="fa-solid fa-people-group text-2xl"
-                              style="width: 30px"
-                            ></i>
-                          </div>
-                          <div class="w-4/5">Groepslessen</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="../disciplines/vroedkunde.html"
-                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
-                        >
-                          <div class="w-1/5 text-center">
-                            <i
-                              class="fa-solid fa-baby text-2xl"
-                              style="width: 30px"
-                            ></i>
-                          </div>
-
-                          <div class="w-4/5">Vroedkunde</div></a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="../disciplines/orthomoleculaire_therapie.html"
-                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
-                          ><div class="w-1/5 text-center">
-                            <i
-                              class="fa-solid fa-balance-scale text-2xl"
-                              style="width: 30px"
-                            ></i>
-                          </div>
-                          <div class="w-4/5">Orthomoleculaire Therapie</div></a
-                        >
                       </li>
                       <li>
                         <a
@@ -303,6 +164,148 @@
                           </div></a
                         >
                       </li>
+                      <li>
+                        <a
+                          href="../disciplines/orthomoleculaire_therapie.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                          ><div class="w-1/5 text-center">
+                            <i
+                              class="fa-solid fa-balance-scale text-2xl"
+                              style="width: 30px"
+                            ></i>
+                          </div>
+                          <div class="w-4/5">Orthomoleculaire Therapie</div></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../disciplines/groepslessen.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        >
+                          <div class="w-1/5 text-center">
+                            <i
+                              class="fa-solid fa-people-group text-2xl"
+                              style="width: 30px"
+                            ></i>
+                          </div>
+                          <div class="w-4/5">Groepslessen</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="../disciplines/vroedkunde.html"
+                          class="flex flex-wrap items-center py-2 hover:bg-gray-100"
+                        >
+                          <div class="w-1/5 text-center">
+                            <i
+                              class="fa-solid fa-baby text-2xl"
+                              style="width: 30px"
+                            ></i>
+                          </div>
+
+                          <div class="w-4/5">Vroedkunde</div></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item" data-active-classes="text-reviva_m-500">
+                  <a
+                    id="team_accordion_head"
+                    class="page-link"
+                    data-accordion-target="#team_accordion_body"
+                    aria-expanded="false"
+                    aria-controls="team_accordion_body"
+                    >Team <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <div
+                    id="team_accordion_body"
+                    aria-labelledby="team_accordion_head"
+                    class="hidden rounded bg-white lg:absolute"
+                  >
+                    <ul
+                      class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                      aria-labelledby="doubleDropdownButton"
+                    >
+                      <li>
+                        <a
+                          href="./lucia.html"
+                          class="flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <img
+                            style="width: 75px; margin-right: 10px"
+                            class="rounded-full"
+                            src="../assets/img/team/lucia_avatar.png"
+                            alt=""
+                          />
+                          Lucia Vanden Eynde</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./elien.html"
+                          class="block flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <img
+                            style="width: 75px; margin-right: 10px"
+                            class="rounded-full"
+                            src="../assets/img/team/elien_avatar.png"
+                            alt=""
+                          />Elien De Vos</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./yves.html"
+                          class="block flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <img
+                            style="width: 75px; margin-right: 10px"
+                            class="rounded-full"
+                            src="../assets/img/team/yves_avatar.png"
+                            alt=""
+                          />Yves Delaere</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./elke.html"
+                          class="block flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <img
+                            style="width: 75px; margin-right: 10px"
+                            class="rounded-full"
+                            src="../assets/img/team/elke_avatar.png"
+                            alt=""
+                          />Elke Parton</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./lotte.html"
+                          class="block flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <img
+                            style="width: 75px; margin-right: 10px"
+                            class="rounded-full"
+                            src="../assets/img/team/lotte_avatar.png"
+                            alt=""
+                          />Lotte Hendrickx</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./charlotte.html"
+                          class="block flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <img
+                            style="width: 75px; margin-right: 10px"
+                            class="rounded-full"
+                            src="../assets/img/team/charlotte_avatar.png"
+                            alt=""
+                          />Charlotte De Meersman</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -313,7 +316,7 @@
                   <a
                     href="https://altagenda.crossuite.com/praktijkreviva/"
                     target="_blank"
-                    class="text-sm bg-reviva_d-500 text-white hover:bg-reviva_m-500 uppercase px-5 py-3 rounded-full mr-1 mb-1 ease-linear transition-all duration-150"
+                    class="mr-1 mb-1 rounded-full bg-reviva_d-500 px-5 py-3 text-sm uppercase text-white transition-all duration-150 ease-linear hover:bg-reviva_m-500"
                     >Maak een afspraak</a
                   >
                 </li>
@@ -341,26 +344,26 @@
       class="bg-reviva_l-500 pb-10"
       style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)"
     >
-      <div class="container grid grid-cols-1 md:grid-cols-2 pt-32 sm:pt-56">
-        <div class="xl:flex xl:flex-wrap justify-center mx-8 mb-12">
+      <div class="container grid grid-cols-1 pt-32 sm:pt-56 md:grid-cols-2">
+        <div class="mx-8 mb-12 justify-center xl:flex xl:flex-wrap">
           <img
-            class="profile-img w-4/5 xl:3/5 mx-auto wow fadeInLeft"
+            class="profile-img xl:3/5 wow fadeInLeft mx-auto w-4/5"
             src="../assets/img/team/elke.png"
             alt=""
           />
         </div>
         <div class="mx-8 mb-12">
           <h2
-            class="mb-16 text-3xl md:text-5xl text-center md:text-left text-reviva_d-500"
+            class="mb-16 text-center text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl"
           >
             Elke Parton
           </h2>
-          <div class="quote text-4xl lg:text-7xl wow fadeInLeft">
+          <div class="quote wow fadeInLeft text-4xl lg:text-7xl">
             "When you change the way you view <span class="accent">birth</span>,
             the way you birth will <span class="accent">change</span>."
           </div>
-          <p class="font-bold pb-4">Bij Elke kan je terecht voor:</p>
-          <ul class="disciplines text-md lg:text-lg wow fadeInLeft">
+          <p class="pb-4 font-bold">Bij Elke kan je terecht voor:</p>
+          <ul class="disciplines text-md wow fadeInLeft lg:text-lg">
             <li>...</li>
           </ul>
           <a
@@ -368,14 +371,14 @@
             target="_blank"
           >
             <div
-              class="w-auto inline-block text-sm md:text-lg bg-reviva_d-500 text-white hover:bg-reviva_m-500 font-bold uppercase px-5 py-3 rounded-full ease-linear transition-all duration-150"
+              class="inline-block w-auto rounded-full bg-reviva_d-500 px-5 py-3 text-sm font-bold uppercase text-white transition-all duration-150 ease-linear hover:bg-reviva_m-500 md:text-lg"
             >
               Maak een afspraak bij Elke
             </div>
           </a>
         </div>
         <div class="mx-8 mb-12">
-          <p class="text-3xl font-bold pb-12">Wie is Elke?</p>
+          <p class="pb-12 text-3xl font-bold">Wie is Elke?</p>
           <p>Dochter, zus, vriendin, vrouw, mama én vroedvrouw.</p>
           <br />
           <p>
@@ -408,7 +411,7 @@
           </p>
         </div>
         <div class="mx-8 mb-12">
-          <p class="text-3xl font-bold pb-12">Opleiding</p>
+          <p class="pb-12 text-3xl font-bold">Opleiding</p>
           <ul class="experience">
             <li>
               <strong>Bachelor in de vroedkunde</strong><br />
@@ -420,18 +423,18 @@
     </section>
     <!-- Hero Area End -->
 
-    <section id="team" class="py-12 bg-reviva_l-400">
+    <section id="team" class="bg-reviva_l-400 py-12">
       <div class="container text-center">
-        <p class="mb-16 section-heading text-7xl text-reviva_d-500">Ons team</p>
+        <p class="section-heading mb-16 text-7xl text-reviva_d-500">Ons team</p>
       </div>
-      <div class="container grid gap-12 grid-cols-1 md:grid-cols-3">
+      <div class="container grid grid-cols-1 gap-12 md:grid-cols-3">
         <div>
           <div class="avatar">
             <a href="./lucia.html">
               <img src="../assets/img/team/lucia_avatar.png" alt="" />
             </a>
           </div>
-          <p class="text-center mb-8 text-xl">Lucia Vanden Eynde</p>
+          <p class="mb-8 text-center text-xl">Lucia Vanden Eynde</p>
           <div class="flex flex-wrap justify-center">
             <div class="w-4/5">
               <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
@@ -451,7 +454,7 @@
               <img src="../assets/img/team/elien_avatar.png" alt="" />
             </a>
           </div>
-          <p class="text-center mb-8 text-xl">Elien De Vos</p>
+          <p class="mb-8 text-center text-xl">Elien De Vos</p>
           <div class="flex flex-wrap justify-center">
             <div class="w-4/5">
               <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
@@ -471,7 +474,7 @@
               <img src="../assets/img/team/yves_avatar.png" alt="" />
             </a>
           </div>
-          <p class="text-center mb-8 text-xl">Yves Delaere</p>
+          <p class="mb-8 text-center text-xl">Yves Delaere</p>
           <div class="flex flex-wrap justify-center">
             <div class="w-4/5">
               <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
@@ -491,7 +494,7 @@
               <img src="../assets/img/team/elke_avatar.png" alt="" />
             </a>
           </div>
-          <p class="text-center mb-8 text-xl">Elke Parton</p>
+          <p class="mb-8 text-center text-xl">Elke Parton</p>
           <div class="flex flex-wrap justify-center">
             <div class="w-4/5">
               <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
@@ -510,7 +513,7 @@
               <img src="../assets/img/team/lotte_avatar.png" alt="" />
             </a>
           </div>
-          <p class="text-center mb-8 text-xl">Lotte Hendrickx</p>
+          <p class="mb-8 text-center text-xl">Lotte Hendrickx</p>
           <div class="flex flex-wrap justify-center">
             <div class="w-4/5">
               <ul
@@ -525,7 +528,7 @@
               <img src="../assets/img/team/charlotte_avatar.png" alt="" />
             </a>
           </div>
-          <p class="text-center mb-8 text-xl">Charlotte De Meersman</p>
+          <p class="mb-8 text-center text-xl">Charlotte De Meersman</p>
           <div class="flex flex-wrap justify-center">
             <div class="w-4/5">
               <ul class="disciplines wow fadeInLeft md:text-base lg:text-lg">
@@ -545,7 +548,7 @@
     <footer class="bg-reviva_d-500 py-10">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full text-center sm:text-left sm:w-1/3 mb-8 sm:mb-0">
+          <div class="mb-8 w-full text-center sm:mb-0 sm:w-1/3 sm:text-left">
             <div class="mx-3 mb-8">
               <p class="text-3xl text-white">PRAKTIJK REVIVA</p>
               <p class="text-gray-300">
@@ -562,23 +565,23 @@
             </div>
           </div>
 
-          <div class="w-full sm:w-1/3 text-center mb-8 sm:mb-0">
+          <div class="mb-8 w-full text-center sm:mb-0 sm:w-1/3">
             <h4 class="mb-3 text-reviva_l-500">
               Schrijf je in voor onze nieuwsbrief!
             </h4>
-            <p class="mb-4 text-reviva_l-500 leading-loose text-sm">
+            <p class="mb-4 text-sm leading-loose text-reviva_l-500">
               Blijf op de hoogte van alle nieuwigheden bij Praktijk Reviva.
             </p>
             <form for="">
               <div>
                 <input
                   type="Email"
-                  class="mb-5 mr-2 bg-white border border-reviva_d-300 rounded-full px-5 py-3 duration-300 focus:border-reviva_d-500 outline-none"
+                  class="mb-5 mr-2 rounded-full border border-reviva_d-300 bg-white px-5 py-3 outline-none duration-300 focus:border-reviva_d-500"
                   name="email"
                   placeholder="Uw e-mailadres"
                 />
                 <button
-                  class="border-2 border-white bg-reviva_d-500 text-white rounded-full w-12 h-12 duration-300 hover:bg-reviva_m-500"
+                  class="h-12 w-12 rounded-full border-2 border-white bg-reviva_d-500 text-white duration-300 hover:bg-reviva_m-500"
                   type="submit"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
@@ -587,7 +590,7 @@
             </form>
           </div>
 
-          <div class="w-full sm:w-1/3 mb-8 sm:mb-0">
+          <div class="mb-8 w-full sm:mb-0 sm:w-1/3">
             <div class="mx-3 mb-8">
               <ul class="social-icons flex justify-center md:justify-end">
                 <li class="mx-2">
@@ -617,7 +620,7 @@
     <!-- Footer Section End -->
 
     <section
-      class="bg-reviva_d-500 py-6 border-t-2 border-gray-700 border-dotted"
+      class="border-t-2 border-dotted border-gray-700 bg-reviva_d-500 py-6"
     >
       <div class="container">
         <div class="flex flex-wrap">
@@ -632,7 +635,7 @@
     <!-- Go to Top Link -->
     <a
       href="#"
-      class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full bg-reviva_d-600 text-white text-lg z-20 duration-300 hover:bg-reviva_m-500"
+      class="back-to-top fixed bottom-0 right-0 z-20 mb-5 mr-5 flex h-10 w-10 items-center justify-center rounded-full bg-reviva_d-600 text-lg text-white duration-300 hover:bg-reviva_m-500"
     >
       <i class="fa-solid fa-arrow-up"></i>
     </a>
