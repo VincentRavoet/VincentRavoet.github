@@ -6,6 +6,7 @@ module.exports = {
       '*.{html,js}',
       './team/*.html',
       './disciplines/*.html',
+      './disciplines/kinesitherapie-specialisaties/*.html',
       "./node_modules/flowbite/**/*.js"
     ]
   },
