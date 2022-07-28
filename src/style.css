@@ -141,7 +141,7 @@ p {
   @apply text-reviva_m-500;
 }
 
-.disciplines > li::before, .experience > li::before {
+.disciplines > li::before, .experience > li::before, .ulist > li::before {
   content: "O";
   font-weight: bold; 
   display: inline-block; 
@@ -168,7 +168,7 @@ p {
 
 .discipline:hover svg > line, .discipline:hover svg > path {
   stroke: #5BAFA7;
-  @apply text-reviva_m-500 cursor-pointer;
+  @apply text-reviva_m-500 cursor-pointer ease-linear transition-all duration-100;
 }
 
 .discipline {

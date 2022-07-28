@@ -1092,6 +1092,10 @@ input:checked + .toggle-bg{
   margin-right: 0.5rem;
 }
 
+.ml-8{
+  margin-left: 2rem;
+}
+
 .mb-32{
   margin-bottom: 8rem;
 }
@@ -1184,8 +1188,8 @@ input:checked + .toggle-bg{
   width: 20%;
 }
 
-.w-2\/3{
-  width: 66.666667%;
+.w-3\/5{
+  width: 60%;
 }
 
 .w-auto{
@@ -1316,12 +1320,12 @@ input:checked + .toggle-bg{
   gap: 3rem;
 }
 
-.gap-24{
-  gap: 6rem;
-}
-
 .gap-8{
   gap: 2rem;
+}
+
+.gap-24{
+  gap: 6rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -1587,12 +1591,12 @@ input:checked + .toggle-bg{
   padding-top: 14rem;
 }
 
-.pb-4{
-  padding-bottom: 1rem;
-}
-
 .pb-12{
   padding-bottom: 3rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pl-1{
@@ -2005,7 +2009,7 @@ p{
   color: rgb(91 175 167 / var(--tw-text-opacity));
 }
 
-.disciplines > li::before, .experience > li::before {
+.disciplines > li::before, .experience > li::before, .ulist > li::before {
   content: "O";
   font-weight: bold; 
   display: inline-block; 
@@ -2040,6 +2044,10 @@ p{
   cursor: pointer;
   --tw-text-opacity: 1;
   color: rgb(91 175 167 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+  transition-timing-function: linear;
 }
 
 .discipline{
@@ -2485,6 +2493,14 @@ p{
     margin-bottom: 0px;
   }
 
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:h-screen{
     height: 100vh;
   }
@@ -2530,6 +2546,11 @@ p{
 
   .md\:text-5xl{
     font-size: 3.5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-lg{
@@ -2581,8 +2602,8 @@ p{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:bg-transparent{
@@ -2628,6 +2649,11 @@ p{
   .xl\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 1536px){
