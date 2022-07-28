@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png" />
+
+    <title>Praktijk Reviva</title>
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
+    <!-- Tiny Slider  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/tiny-slider.css" />
+    <!-- Tailwind css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- Header Area wrapper Starts -->
+    <div w3-include-html="/views/components/header_dropdown.html"></div>
+    <!-- Header Area wrapper End -->
+
+    <!-- Hero Area Start -->
+    <section id="welkom" class="bg-reviva_l-500 pb-10" style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
+      <div class="container pt-56">
+        <h2 class="text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">Chronische pijneducatie</h2>
+
+        <!-- Sportkinesitherapie -->
+        <div id="sportkinesitherapie" class="pt-24">
+          <div class="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div>
+              <p>Tekst ontbreekt.</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center rounded-full">
+              <img class="mx-auto w-4/5 rounded-full shadow-2xl" src="/assets/img/kine.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="bg-reviva_l-400">
+      <div class="container">
+        <h2 class="text-xl text-reviva_d-500 md:text-left">Voor deze specialisatie kan je terecht bij:</h2>
+        <div class="wow fadeInDown container grid grid-cols-2 gap-12 py-12 md:grid-cols-4">
+          <div>
+            <div class="avatar">
+              <a href="/views/team/lucia.html">
+                <img src="/assets/img/team/lucia_avatar.png" alt="" />
+              </a>
+            </div>
+            <p class="mb-8 text-center text-xl">Lucia Vanden Eynde</p>
+          </div>
+          <div>
+            <div class="avatar">
+              <a href="/views/team/elien.html">
+                <img src="/assets/img/team/elien_avatar.png" alt="" />
+              </a>
+            </div>
+            <p class="mb-8 text-center text-xl">Elien De Vos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <div w3-include-html="/views/components/footer.html"></div>
+
+    <!-- All js Here -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+      w3IncludeHTML();
+    </script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/tiny-slider.js"></script>
+    <script src="/assets/js/contact-form.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/flowbite/dist/flowbite.js"></script>
+  </body>
+</html>
