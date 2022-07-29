@@ -100,7 +100,7 @@ p {
   transform: rotate(135deg);
 }
 .page-scroll, .page-link {
-  @apply inline-block px-5 py-2 uppercase text-reviva_d-500 duration-300 font-semibold;
+  @apply inline-block px-4 py-2 uppercase text-reviva_d-500 duration-300 font-semibold;
 }
 .page-scroll.active,
 .page-scroll:hover,
@@ -116,11 +116,11 @@ p {
 }
 
 .avatar {
-  @apply mx-auto w-2/3 bg-reviva_d-25 rounded-full shadow-2xl;
+  @apply mx-auto w-2/3 rounded-full shadow-2xl;
 }
 
 .avatar > a > img {
-  @apply mb-8 rounded-full opacity-50 ease-linear transition-all duration-150;
+  @apply mb-8 rounded-full opacity-70 ease-linear transition-all ease-linear duration-150;
 }
 
 @media (max-width: 1280px) {

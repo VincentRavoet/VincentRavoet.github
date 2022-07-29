@@ -20,14 +20,13 @@
     />
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
-    <!-- Tiny Slider  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/tiny-slider.css" />
+
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
-    <div w3-include-html="/views/components/header_dropdown.html"></div>
+    <div id="header_dropdown"></div>
     <!-- Header Area wrapper End -->
 
     <!-- Hero Area Start -->
@@ -37,7 +36,8 @@
         <div id="terug_in_actie">
           <div class="grid grid-cols-1 gap-24 md:grid-cols-2">
             <div>
-              <h2 class="text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">TERUG-IN-ACTIE</h2>
+              <a href="/views/disciplines/groepslessen.html" class="cursor-pointer text-reviva_d-500 hover:text-reviva_m-500"><i class="fas fa-arrow-left"></i> Terug naar overzicht groepslessen</a>
+              <h2 class="mt-4 text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">TERUG-IN-ACTIE</h2>
               <div class="my-12">
                 <a
                   href="https://www.supersaas.com/schedule/Praktijk_Reviva/Reviva_Groepslessen"
@@ -49,8 +49,8 @@
                 </a>
               </div>
               <p>
-                Heb je wel eens aan een fitness- of groepsles deelgenomen maar ervaarde je de oefeningen toch als té zwaar en belastend wanneer je nek -of rugklachten hebt? Of denk je dat sporten
-                niets voor jou is, uit vrees dat je meer kwaad doet dan goed?
+                Heb je wel eens aan een fitness- of groepsles deelgenomen maar ervaarde je de oefeningen toch als té zwaar en belastend wanneer je nek -of rugklachten hebt? Of denk je dat sporten niets voor jou is, uit vrees dat je meer kwaad doet
+                dan goed?
               </p>
               <br />
               <p>Ons team van kinesitherapeuten en een beweegcoach stelden een lessenreeks samen voor iedereen die <strong>rug-vriendelijk</strong> wil bewegen of wil beginnen met sporten!</p>
@@ -60,20 +60,19 @@
               </div>
 
               <p>
-                Tijdens deze lessen werk je aan het verbeteren van je basisconditie door middel van specifieke <strong>stabilisatie- en spierversterkende</strong> oefeningen, waarbij we als
-                professionals extra aandacht besteden aan een juiste uitvoering. Zeker als je gekende rug- of nekklachten hebt is het belangrijk om op een pijnvrije manier te (leren) bewegen. Je
-                krijgt tijdens deze “Rugscholingslessen” ook verschillende tips en tricks mee, zoals mobilisatie- en rekoefeningen, om je rugklachten te voorkomen of te verminderen. Verder komen er
-                ook leuke ontspannings-oefeningen aan bod alsook enkele yoga- en stretchtechnieken om het hele lichaam opnieuw in balans te brengen. Zo zal je zelf ook ontdekken dat bewegen leuk een
-                gezond is!
+                Tijdens deze lessen werk je aan het verbeteren van je basisconditie door middel van specifieke <strong>stabilisatie- en spierversterkende</strong> oefeningen, waarbij we als professionals extra aandacht besteden aan een juiste
+                uitvoering. Zeker als je gekende rug- of nekklachten hebt is het belangrijk om op een pijnvrije manier te (leren) bewegen. Je krijgt tijdens deze “Rugscholingslessen” ook verschillende tips en tricks mee, zoals mobilisatie- en
+                rekoefeningen, om je rugklachten te voorkomen of te verminderen. Verder komen er ook leuke ontspannings-oefeningen aan bod alsook enkele yoga- en stretchtechnieken om het hele lichaam opnieuw in balans te brengen. Zo zal je zelf ook
+                ontdekken dat bewegen leuk een gezond is!
               </p>
               <br />
-              <p>
-                We werken met 2 verschillende niveaus (BASIC en PRO) zodat je kan aansluiten in de groep die jou het beste ligt. Ook houden we onze groepen bewust klein, zodat een persoonlijke
-                begeleiding mogelijk is.
-              </p>
+              <p>We werken met 2 verschillende niveaus (BASIC en PRO) zodat je kan aansluiten in de groep die jou het beste ligt. Ook houden we onze groepen bewust klein, zodat een persoonlijke begeleiding mogelijk is.</p>
             </div>
             <div class="rounded-xl border-4 border-reviva_m-500 p-12">
               <h2 class="mb-12 text-2xl font-bold text-reviva_d-500">Praktische info</h2>
+
+              <h2 class="mb-8">Inschrijven is mogelijk per losse les of per lessenreeks. We werken met verschillende formules waarbij de prijs per les steeds goedkoper wordt!</h2>
+
               <h2 class="mb-4 text-xl font-bold text-reviva_d-500">TERUG-IN-ACTIE BASIC: ideaal voor starters</h2>
 
               <ul class="ulist ml-8 mb-12">
@@ -98,16 +97,16 @@
               <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Tarief</h2>
 
               <ul class="ulist ml-8 mb-12">
-                <li><strong>Losse les</strong>: €13 per les</li>
-                <li><strong>Formule Maxi</strong>: lessenreeks van 15 lessen (€12 per les)</li>
-                <li><strong>Formule Viva</strong>: lessenreeks voor een heel sportjaar (30 lessen) (€9.5 per les)</li>
+                <li><strong>Losse les</strong>: €14 per les</li>
+                <li><strong>Formule Mini</strong>: lessenreeks per trimester (+/- 15 lessen) (€12 per les)</li>
+                <li><strong>Formule Maxi</strong>: lessenreeks voor een heel sportjaar (+/- 30 lessen) (€10.5 per les)</li>
               </ul>
 
               <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Lesgever</h2>
 
-              <a href="/views/team/charlotte.html" class="mb-12 flex flex-wrap items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              <a href="/views/team/charlotte.html" class="mb-12 flex flex-wrap items-center py-2 px-4 text-reviva_d-500 hover:text-reviva_m-500">
                 <img style="width: 100px; margin-right: 10px" class="rounded-full" src="/assets/img/team/charlotte_avatar.png" alt="" />
-                <h2 class="text-lg text-reviva_d-500">Charlotte De Meersman</h2>
+                <h2 class="text-lg">Charlotte De Meersman<br />(personal coach)</h2>
               </a>
 
               <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Inschrijven</h2>
@@ -131,16 +130,14 @@
     </section>
 
     <!-- Footer Section Start -->
-    <div w3-include-html="/views/components/footer.html"></div>
+    <div id="footer_component"></div>
 
     <!-- All js Here -->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
+
     <script src="/assets/js/wow.js"></script>
 
     <script src="/assets/js/contact-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite/dist/flowbite.js"></script>
   </body>

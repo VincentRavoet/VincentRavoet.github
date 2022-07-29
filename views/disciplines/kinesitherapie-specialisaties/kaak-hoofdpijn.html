@@ -20,36 +20,34 @@
     />
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
-    <!-- Tiny Slider  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/tiny-slider.css" />
+
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
-    <div w3-include-html="/views/components/header_dropdown.html"></div>
+    <div id="header_dropdown"></div>
     <!-- Header Area wrapper End -->
 
     <!-- Hero Area Start -->
     <section id="welkom" class="bg-reviva_l-500 pb-10" style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
       <div class="container pt-56">
-        <h2 class="text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">Kaak- en hoofdpijnklachten</h2>
+        <a href="/views/disciplines/kinesitherapie.html" class="cursor-pointer text-reviva_d-500 hover:text-reviva_m-500"><i class="fas fa-arrow-left"></i> Terug naar overzicht specialisaties</a>
+        <h2 class="mt-4 text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">Kaak- en hoofdpijnklachten</h2>
 
         <!-- Kaak- en hoofdpijnklachten -->
         <div id="kaak_en_hoofdpijnklachten" class="pt-24">
           <div class="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <p>
-                Temporomandibulaire problemen, ofwel klachten t.h.v. het kaakgewricht, zijn één van de meestvoorkomende klachten van het musculoskeletaal stelsel, naast nek- en rugklachten. Een
-                pijnlijk kaakgewricht, een klikkend gevoel bij het openen van de mond, een beperkte mondopening en zelfs hoofd -of aangezichtspijn kunnen allemaal voortkomen o.w.v een dysfunctie in
-                het kaakgewricht.
+                Temporomandibulaire problemen, ofwel klachten t.h.v. het kaakgewricht, zijn één van de meestvoorkomende klachten van het musculoskeletaal stelsel, naast nek- en rugklachten. Een pijnlijk kaakgewricht, een klikkend gevoel bij het
+                openen van de mond, een beperkte mondopening en zelfs hoofd -of aangezichtspijn kunnen allemaal voortkomen o.w.v een dysfunctie in het kaakgewricht.
               </p>
               <br />
               <p>
-                Wanneer bovendien de omliggende spieren te gespannen zijn, resulteert dit vaak in persisterende hoofdpijnen. Hoewel deze klachten soms complex lijken, zijn deze mits een goede diagnose
-                meestal eenvoudig te behandelen, via manuele therapie en andere myofasciale technieken. Tijdens een behandeling van het kaakgewricht is het belangrijk om eventueel andere betrokken
-                regio's, zoals de nek en het schoudergewricht, mee te evalueren en te behandelen om tot een beter resultaat te komen. Daarnaast wordt tevens aandacht besteed aan het opsporen van
-                onderhoudende factoren, waar de patiënt zich meestal niet bewust van is, zoals bruxisme (tandknarsen), klemmen of onder andere ongezonde bijtgewoontes.
+                Wanneer bovendien de omliggende spieren te gespannen zijn, resulteert dit vaak in persisterende hoofdpijnen. Hoewel deze klachten soms complex lijken, zijn deze mits een goede diagnose meestal eenvoudig te behandelen, via manuele
+                therapie en andere myofasciale technieken. Tijdens een behandeling van het kaakgewricht is het belangrijk om eventueel andere betrokken regio's, zoals de nek en het schoudergewricht, mee te evalueren en te behandelen om tot een beter
+                resultaat te komen. Daarnaast wordt tevens aandacht besteed aan het opsporen van onderhoudende factoren, waar de patiënt zich meestal niet bewust van is, zoals bruxisme (tandknarsen), klemmen of onder andere ongezonde bijtgewoontes.
               </p>
             </div>
             <div class="flex flex-wrap items-center justify-center rounded-full">
@@ -77,16 +75,14 @@
     </section>
 
     <!-- Footer Section Start -->
-    <div w3-include-html="/views/components/footer.html"></div>
+    <div id="footer_component"></div>
 
     <!-- All js Here -->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
+
     <script src="/assets/js/wow.js"></script>
 
     <script src="/assets/js/contact-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite/dist/flowbite.js"></script>
   </body>

@@ -20,14 +20,13 @@
     />
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
-    <!-- Tiny Slider  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/tiny-slider.css" />
+
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
-    <div w3-include-html="/views/components/header_dropdown.html"></div>
+    <div id="header_dropdown"></div>
     <!-- Header Area wrapper End -->
 
     <!-- Hero Area Start -->
@@ -40,9 +39,8 @@
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <p>
-                Meer en meer klachten zijn chronisch van aard. Vaak ligt de oplossing dan in één pilletje en de klacht wordt onderdrukt... Maar wat wou je lichaam je vertellen? Bij orthomoleculaire
-                therapie nemen we de <b>oorzaak</b> van jouw probleem aan in plaats van het symptoom en gaan we op zoek naar jouw unieke <b>balans</b>. Een orthomoleculair therapeut is een coach,
-                luisteraar, adviseur en bekijkt de patiënt als mens en niet als een ziek persoon.
+                Meer en meer klachten zijn chronisch van aard. Vaak ligt de oplossing dan in één pilletje en de klacht wordt onderdrukt... Maar wat wou je lichaam je vertellen? Bij orthomoleculaire therapie nemen we de <b>oorzaak</b> van jouw
+                probleem aan in plaats van het symptoom en gaan we op zoek naar jouw unieke <b>balans</b>. Een orthomoleculair therapeut is een coach, luisteraar, adviseur en bekijkt de patiënt als mens en niet als een ziek persoon.
               </p>
 
               <p class="quote py-12 text-7xl">
@@ -52,12 +50,12 @@
 
               <p>
                 Voor deze vorm van therapie kan je terecht bij onze eigen
-                <a href="/views/team/elien.html" class="font-bold text-reviva_m-500">Elien De Vos</a>. Sinds 2021 volgde zij de opleiding tot Orthomoleculair therapeut en is dan ook afgestudeerd als
-                <b>erkend kPNI Orthomoleculair Therapeut</b>! Elien gaat op zoek naar de oorzaak van een klacht en biedt ondersteuning via <b>voedings-, levensstijl- en eventueel suppletie-advies</b>.
-                Ze is ervan overtuigd dat een holistische aanpak noodzakelijk is bij het aanpakken van een probleem. <br />
+                <a href="/views/team/elien.html" class="font-bold text-reviva_m-500">Elien De Vos</a>. Sinds 2021 volgde zij de opleiding tot Orthomoleculair therapeut en is dan ook afgestudeerd als <b>erkend kPNI Orthomoleculair Therapeut</b>! Elien
+                gaat op zoek naar de oorzaak van een klacht en biedt ondersteuning via <b>voedings-, levensstijl- en eventueel suppletie-advies</b>. Ze is ervan overtuigd dat een holistische aanpak noodzakelijk is bij het aanpakken van een probleem.
                 <br />
-                Naast voeding, nemen we ook slaap, bioritme, stresspatronen, beweging en doorgemaakte patronen van jouw volledige levenslijn onder de loep. Waar ging het mis? Door even uit te zoomen,
-                gaan we op zoek naar een gepaste behandeling door alle
+                <br />
+                Naast voeding, nemen we ook slaap, bioritme, stresspatronen, beweging en doorgemaakte patronen van jouw volledige levenslijn onder de loep. Waar ging het mis? Door even uit te zoomen, gaan we op zoek naar een gepaste behandeling door
+                alle
                 <b>"stukjes van de puzzel"</b> aan te pakken. <br /><br />
                 Als laatste kunnen eventueel supplementen ingezet worden indien nodig. Hierdoor zorgen we ervoor dat je tekorten in je lichaam aangevuld worden en schadelijke overdaden verminderen.
                 <br /><br />
@@ -105,16 +103,14 @@
     </section>
 
     <!-- Footer Section Start -->
-    <div w3-include-html="/views/components/footer.html"></div>
+    <div id="footer_component"></div>
 
     <!-- All js Here -->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
+
     <script src="/assets/js/wow.js"></script>
 
     <script src="/assets/js/contact-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite/dist/flowbite.js"></script>
   </body>

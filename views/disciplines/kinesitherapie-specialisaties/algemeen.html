@@ -20,36 +20,35 @@
     />
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
-    <!-- Tiny Slider  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/tiny-slider.css" />
+
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
-    <div w3-include-html="/views/components/header_dropdown.html"></div>
+    <div id="header_dropdown"></div>
     <!-- Header Area wrapper End -->
 
     <!-- Hero Area Start -->
     <section id="welkom" class="bg-reviva_l-500 pb-10" style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
       <div class="container pt-56">
-        <h2 class="text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">Algemene kinesitherapie en revalidatie</h2>
+        <a href="/views/disciplines/kinesitherapie.html" class="cursor-pointer text-reviva_d-500 hover:text-reviva_m-500"><i class="fas fa-arrow-left"></i> Terug naar overzicht specialisaties</a>
+        <h2 class="mt-4 text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">Algemene kinesitherapie en revalidatie</h2>
 
         <!-- Algemene kinesitherapie -->
         <div id="algemene_kinesitherapie" class="py-24">
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <p>
-                “Kinesi-therapie” betekent letterlijk: behandelen door middel van beweging. In onze praktijk primeert een manuele behandelwijze van diverse klachten van het lichaam. Vanuit deze visie
-                wordt het lichaam gezien als één geheel van spieren, gewrichten en zenuwen waarbij we op zoek gaan naar de oorzaak van jouw klacht. We proberen niet alleen de symptomen aan te pakken,
-                maar onderzoeken ook mogelijke onderhoudende factoren om tot een zo optimaal mogelijk herstel te komen.
+                “Kinesi-therapie” betekent letterlijk: behandelen door middel van beweging. In onze praktijk primeert een manuele behandelwijze van diverse klachten van het lichaam. Vanuit deze visie wordt het lichaam gezien als één geheel van
+                spieren, gewrichten en zenuwen waarbij we op zoek gaan naar de oorzaak van jouw klacht. We proberen niet alleen de symptomen aan te pakken, maar onderzoeken ook mogelijke onderhoudende factoren om tot een zo optimaal mogelijk herstel
+                te komen.
               </p>
               <br />
               <p>
-                We geloven bovendien dat de meest succesvolle aanpak ligt in het herwinnen van de controle over je lichaam, zodat je zelf je klachten in de hand kan houden én opnieuw meester bent over
-                je eigen lichaam. Daarom hechten we een groot belang aan het aanleren van specifieke oefeningen op maat van jouw lichaam. Ons doel is je opnieuw goed te laten voelen, en nadien ook fit
-                en gezond te blijven! Je kan in onze praktijk terecht voor diverse klachten van het houdings- en bewegingsapparaat: specifieke rug- en nekklachten, overbelastingsletsels, pre- en
-                postoperatieve ingrepen, sportletsels, myofasciale (spier)pijn, stressgerelateerde klachten,…
+                We geloven bovendien dat de meest succesvolle aanpak ligt in het herwinnen van de controle over je lichaam, zodat je zelf je klachten in de hand kan houden én opnieuw meester bent over je eigen lichaam. Daarom hechten we een groot
+                belang aan het aanleren van specifieke oefeningen op maat van jouw lichaam. Ons doel is je opnieuw goed te laten voelen, en nadien ook fit en gezond te blijven! Je kan in onze praktijk terecht voor diverse klachten van het houdings-
+                en bewegingsapparaat: specifieke rug- en nekklachten, overbelastingsletsels, pre- en postoperatieve ingrepen, sportletsels, myofasciale (spier)pijn, stressgerelateerde klachten,…
               </p>
             </div>
             <div class="rounded-full">
@@ -93,16 +92,14 @@
     </section>
 
     <!-- Footer Section Start -->
-    <div w3-include-html="/views/components/footer.html"></div>
+    <div id="footer_component"></div>
 
     <!-- All js Here -->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
+
     <script src="/assets/js/wow.js"></script>
 
     <script src="/assets/js/contact-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite/dist/flowbite.js"></script>
   </body>

@@ -20,29 +20,28 @@
     />
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
-    <!-- Tiny Slider  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/tiny-slider.css" />
+
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
-    <div w3-include-html="/views/components/header_dropdown.html"></div>
+    <div id="header_dropdown"></div>
     <!-- Header Area wrapper End -->
 
     <!-- Hero Area Start -->
     <section id="welkom" class="bg-reviva_l-500 pb-10" style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
       <div class="container pt-56">
-        <h2 class="text-3xl text-reviva_d-500 md:text-left md:text-5xl">Manuele therapie</h2>
+        <a href="/views/disciplines/kinesitherapie.html" class="cursor-pointer text-reviva_d-500 hover:text-reviva_m-500"><i class="fas fa-arrow-left"></i> Terug naar overzicht specialisaties</a>
+        <h2 class="mt-4 text-3xl text-reviva_d-500 md:text-left md:text-5xl">Manuele therapie</h2>
 
         <!-- Manuele therapie -->
         <div id="manuele_therapie" class="py-24">
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <p>
-                Na een uitgebreid klinisch onderzoek, worden spanningen of bloccages ter hoogte van een gewricht behandeld dmv specifieke mobilisatie- en manipulatietechnieken. Het zogenoemde "kraken"
-                (het knappen van een luchtbelletje) zorgt voor een onmiddelijk herstel in de beweeglijkheid wat meteen voelbaar is: bewegen gaat makkelijker en ook de (afweer)spanning van de spieren
-                rond de pijnlijke regio neemt af.
+                Na een uitgebreid klinisch onderzoek, worden spanningen of bloccages ter hoogte van een gewricht behandeld dmv specifieke mobilisatie- en manipulatietechnieken. Het zogenoemde "kraken" (het knappen van een luchtbelletje) zorgt voor
+                een onmiddelijk herstel in de beweeglijkheid wat meteen voelbaar is: bewegen gaat makkelijker en ook de (afweer)spanning van de spieren rond de pijnlijke regio neemt af.
               </p>
               <br />
               <p>Na afloop van elke behandeling wordt het resultaat beoordeeld en krijg je oefeningen mee om de herwonnen beweeglijkheid te onderhouden.</p>
@@ -88,16 +87,14 @@
     </section>
 
     <!-- Footer Section Start -->
-    <div w3-include-html="/views/components/footer.html"></div>
+    <div id="footer_component"></div>
 
     <!-- All js Here -->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
+
     <script src="/assets/js/wow.js"></script>
 
     <script src="/assets/js/contact-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite/dist/flowbite.js"></script>
   </body>
