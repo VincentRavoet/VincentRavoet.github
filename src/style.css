@@ -45,11 +45,8 @@ b, strong {
 }
 
 @media (max-width: 1024px) {
-  #home {
-    background: url('../img/team/team_background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .welcome-text-mobile {
+    background: url('/assets/img/team/elien_avatar.png');
   }
 }
 
