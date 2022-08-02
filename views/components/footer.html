@@ -21,12 +21,7 @@
         <p class="mb-4 text-sm leading-loose text-reviva_l-500">Blijf op de hoogte van alle nieuwigheden bij Praktijk Reviva.</p>
         <form for="">
           <div>
-            <input
-              type="Email"
-              class="mb-5 mr-2 rounded-full border border-reviva_d-300 bg-white px-5 py-3 outline-none duration-300 focus:border-reviva_d-500"
-              name="email"
-              placeholder="Uw e-mailadres"
-            />
+            <input type="Email" class="mb-5 mr-2 rounded-full border border-reviva_d-300 bg-white px-5 py-3 outline-none duration-300 focus:border-reviva_d-500" name="email" placeholder="Uw e-mailadres" />
             <button class="h-12 w-12 rounded-full border-2 border-white bg-reviva_d-500 text-white duration-300 hover:bg-reviva_m-500" type="submit">
               <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -59,9 +54,15 @@
   <div class="container">
     <div class="flex flex-wrap">
       <div class="w-full text-center">
-        <p class="text-white">© 2022 - Praktijk Reviva</p>
+        <p class="text-white">© <span id="copyright_year"></span> - Praktijk Reviva</p>
         <p class="text-white">Template by UIDeck - Shine</p>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  var date = new Date();
+
+  document.getElementById("copyright_year").innerHTML = date.getFullYear();
+</script>
