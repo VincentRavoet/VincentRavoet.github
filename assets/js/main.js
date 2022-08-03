@@ -8,15 +8,15 @@ $(document).ready(() => {
       header_navbar.classList.add("sticky");
 
       appear.forEach((e) => {
-        e.classList.add("sm:block");
-        e.classList.remove("sm:hidden");
+        e.classList.add("lg:block");
+        e.classList.remove("lg:hidden");
       });
     } else {
       header_navbar.classList.remove("sticky");
 
       appear.forEach((e) => {
-        e.classList.add("sm:hidden");
-        e.classList.remove("sm:block");
+        e.classList.add("lg:hidden");
+        e.classList.remove("lg:block");
       });
     }
   }
