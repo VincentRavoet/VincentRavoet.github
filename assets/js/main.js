@@ -57,7 +57,7 @@ $(document).ready(() => {
         e.preventDefault();
 
         var element = document.querySelector(elem.getAttribute("href"));
-        var headerOffset = 126;
+        var headerOffset = 20;
         var elementPosition = element.getBoundingClientRect().top;
         var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
