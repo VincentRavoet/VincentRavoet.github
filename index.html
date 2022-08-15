@@ -32,7 +32,7 @@
           <nav class="navbar navbar-expand-lg relative flex items-center justify-between py-2 duration-300">
             <a class="navbar-brand" href="/index.html">
               <img class="hidden sm:block" src="/assets/img/brand.png" />
-              <img class="sm:hidden" src="/assets/img/brand_small.png" />
+              <img class="sm:hidden" style="padding-right: 7px" src="/assets/img/brand_small.png" />
             </a>
 
             <a
@@ -57,7 +57,7 @@
             </button>
 
             <div class="collapse navbar-collapse mt-full absolute top-100 left-0 z-20 hidden w-full bg-white py-3 shadow duration-300 lg:static lg:block lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto items-center justify-center lg:flex">
+              <ul class="navbar-nav mr-auto items-center justify-center lg:flex xl:justify-evenly">
                 <li class="nav-item">
                   <a class="page-scroll active" href="#home">Home</a>
                 </li>
@@ -68,13 +68,15 @@
                   <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#faq">FAQ</a>
+                  <a class="page-scroll" href="#reviews">Recensies</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item appear-on-scroll hidden">
-                  <a href="https://altagenda.crossuite.com/praktijkreviva/" target="_blank" class="rounded-full bg-reviva_d-500 p-3 text-sm uppercase text-white transition-all duration-150 ease-linear hover:bg-reviva_m-500">Maak een afspraak</a>
+                  <a href="https://altagenda.crossuite.com/praktijkreviva/" target="_blank" class="rounded-full bg-reviva_d-500 py-3 px-6 text-sm uppercase text-white transition-all duration-150 ease-linear hover:bg-reviva_m-500"
+                    >Maak een afspraak</a
+                  >
                 </li>
                 <li class="nav-item px-5">
                   <p><i class="fas fa-phone text-reviva_m-500"></i> 016 41 42 50</p>
@@ -100,7 +102,7 @@
           <div class="welcome-text wow fadeInLeft flex items-center justify-center rounded-full lg:shadow-2xl" data-wow-delay="0.5s">
             <div>
               <div class="flex items-center justify-center">
-                <img class="hidden w-1/3 lg:block" src="assets/img/logo_reviva_praktijk.png" alt="" />
+                <img class="w-2/3 sm:w-1/3 lg:block" src="assets/img/logo_reviva_praktijk.png" alt="" />
               </div>
               <p class="mx-4 pt-8 text-center text-sm md:mx-12 lg:mx-28 lg:block lg:text-sm xl:text-lg">
                 De multidisciplinaire groepspraktijk <br />in Lovenjoel, waar
@@ -250,12 +252,74 @@
       <!-- Team Section Start -->
       <div id="team_component"></div>
 
-      <!-- FAQ Section End -->
-      <section id="faq" class="container py-24 pb-36 text-reviva_d-500">
+      <section id="reviews" class="mx-16 py-24 sm:mx-24">
         <div class="text-center">
-          <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500" data-wow-delay="0.3s">FAQ</h2>
+          <h2 class="section-heading wow fadeInDown mb-20 text-reviva_d-500" data-wow-delay="0.3s">Dit zeggen onze patiënten...</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
+          <div class="rounded-xl border-4 border-reviva_m-500 p-4 shadow-2xl">
+            <img class="mb-4" src="/assets/img/5_stars.png" />
+            <i
+              >"Ik ben in behandeling geweest bij Lucia tijdens en na mijn beide zwangerschappen. In de laatste maanden van de zwangerschap had ik vaak last van rugpijn. Ze heeft me volledig onderzocht en uiteindelijk was ik met enkele kinebeurten en
+              de juiste oefeningen snel pijnvrij.<br />
+              <br />
+              Ook postnatale begeleiding is super. Ik ben sportief en gemotiveerd om opnieuw te sporten en Lucia weet je te prikkelen met aangepaste oefeningen maar zal ook eerlijk zijn als herstart nog te vroeg is of je over je limiet zou gaan. Zeer
+              bekwame kinesiste die behandelt met kennis van zaken en ook aangeeft wat buiten haar kennisdomein is en waarvoor je bij een collega moet zijn."
+            </i>
+            <br /><br />
+            <strong>- J. Luyssen</strong>
+          </div>
+          <div class="rounded-xl border-4 border-reviva_m-500 p-4 shadow-2xl">
+            <img class="mb-4" src="/assets/img/5_stars.png" />
+            <i
+              >"Ik ben in behandeling bij Elien De Vos en ik ben echt heel tevreden van haar! Ze staat steeds met een glimlach voor me klaar. Elien geeft me de juiste oefeningen spierversterkende, maar ook ontspanningsoefeningen. De combinatie van
+              massage en ademhalingsoefeningen helpen mij echt heel goed om blokkades en stress weg te nemen en geven me terug de energie die ik kwijt was. <br /><br />Door Elien haar orthomoleculaire kennis helpt ze mij ontstekingen in mijn lichaam
+              aan te pakken door de juiste voeding en supplementen in te zetten. Ik volg ook haar Yoga lessen die ze met de grootste passie en gedrevenheid geeft. Kortom een echte top kine!!!"
+            </i>
+            <br /><br />
+            <strong>- S. Buekenhout</strong>
+          </div>
+          <div class="rounded-xl border-4 border-reviva_m-500 p-4 shadow-2xl">
+            <img class="mb-4" src="/assets/img/5_stars.png" />
+            <i
+              >"Een tijd geleden had ik zo'n trekkingen in mijn rechterbeen dat ik moeilijk kon stappen. Blijkbaar sciatic. Een goede vriend van me had me aangeraden om eens op consultatie te gaan bij mevrouw Lucia Vanden Eynde die hem enorm geholpen
+              had met een gelijkaardig probleem. Ik was helemaal verkocht toen ik reeds na 2 behandelingen met de dry needle therapy helemaal geen pijn meer had en ik weer zonder het minste probleem kon wandelen. <br /><br />Mevrouw Vanden Eynde weet
+              exact wat ze doet en de resultaten zijn verbluffend. Het was het beste aanbeveling die ik ooit van vrienden heb gekregen en ik ben ondertussen een 100% overtuigde fan van de techniek maar ook van de expertise van deze dame. "
+            </i>
+            <br /><br />
+            <strong>- G. Schouteet</strong>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="https://www.google.com/search?q=praktijk+reviva&rlz=1C1AVFC_enBE772BE773&oq=praktijk+reviva&aqs=chrome..69i57j46i175i199i512j69i59j0i22i30j69i59j69i60j69i61l2.4277j0j7&sourceid=chrome&ie=UTF-8#lrd=0x47c16614e80351d5:0x70118f46ee9400c0,1,,,"
+            target="_blank"
+            class="inline-block rounded-full bg-reviva_d-500 p-3 px-5 text-sm font-bold text-white outline-none transition-all duration-150 ease-linear hover:bg-reviva_m-500"
+            >Bekijk meer recensies op Google</a
+          >
+        </div>
+      </section>
+
+      <!-- FAQ Section End -->
+      <section id="contact" class="container py-24 pb-36 text-reviva_d-500">
+        <div class="text-center">
+          <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500" data-wow-delay="0.3s">Contact</h2>
           <div data-accordion="collapse" class="grid border-gray-200 pt-8 text-left md:grid-cols-2 md:gap-16">
             <div id="accordion-flush" class="wow fadeInDown" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+              <h2 id="accordion-flush-heading-0">
+                <button type="button" class="flex w-full items-center justify-between border-b border-gray-200 px-5 py-5 text-left text-lg" data-accordion-target="#accordion-flush-body-0" aria-expanded="false" aria-controls="accordion-flush-body-0">
+                  Hoeveel kost een raadpleging?
+                  <svg data-accordion-icon class="h-6 w-6 shrink-0 rotate-180" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-flush-body-0" class="hidden" aria-labelledby="accordion-flush-heading-0">
+                <div class="border-b border-gray-200 bg-white p-5">
+                  <p class="text-reviva_d-500">Een overzicht van onze tarieven vind je <a href="/views/tarieven.html" class="font-bold text-reviva_m-500 hover:underline">hier</a>.</p>
+                </div>
+              </div>
+
               <h2 id="accordion-flush-heading-1">
                 <button type="button" class="flex w-full items-center justify-between border-b border-gray-200 px-5 py-5 text-left text-lg" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
                   Wat breng ik mee voor een eerste afspraak?
@@ -266,7 +330,7 @@
               </h2>
               <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
                 <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">
+                  <p class="text-reviva_d-500">
                     Het voorschrift van je dokter (indien van toepassing); je identiteitskaart; een hoeslaken en kleine handdoek, alle relevante informatie over je klacht: (verslagen van) medische beeldvorming; verslagen van artsen, vorige
                     behandelingen; comfortabele kledij (bv. T-shirt/topje - short).
                   </p>
@@ -282,7 +346,7 @@
               </h2>
               <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
                 <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">
+                  <p class="text-reviva_d-500">
                     Een kinesessie duurt ongeveer 30 minuten. De eerste sessie kan mogelijk langer duren (45 min. - 60 min.) aangezien we de tijd nemen voor een anamnese (vraaggesprek) en een uitgebreid klinisch onderzoek om je klachten en de
                     oorzaken hiervan in kaart te brengen.
                   </p>
@@ -298,21 +362,7 @@
               </h2>
               <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-2">
                 <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">De eerste behandeling dient plaats te vinden binnen de 8 maanden na de datum die op het voorschrift staat vermeld.</p>
-                </div>
-              </div>
-
-              <h2 id="accordion-flush-heading-4">
-                <button type="button" class="flex w-full items-center justify-between border-b border-gray-200 px-5 py-5 text-left text-lg" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
-                  COVID-19 maatregelen
-                  <svg data-accordion-icon class="h-6 w-6 shrink-0 rotate-180" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">Wanneer je ziek bent of symptomen hebt (koorts, hoest,...) vragen we je je afspraak te annuleren; dit kan telefonisch of per e-mail.</p>
+                  <p class="text-reviva_d-500">De eerste behandeling dient plaats te vinden binnen de 8 maanden na de datum die op het voorschrift staat vermeld.</p>
                 </div>
               </div>
             </div>
@@ -327,7 +377,7 @@
               </h2>
               <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-2">
                 <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">Er wordt na elke sessie afgerekend; dit kan zowel cash als via mobile banking/payconiq.</p>
+                  <p class="text-reviva_d-500">Er wordt na elke sessie afgerekend; dit kan zowel cash als via mobile banking/payconiq.</p>
                 </div>
               </div>
               <h2 id="accordion-flush-heading-6">
@@ -340,7 +390,7 @@
               </h2>
               <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-2">
                 <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">
+                  <p class="text-reviva_d-500">
                     Probeer steeds op tijd op je afspraak te zijn. Ben je te laat, dan zal de behandeling jammer genoeg ook korter zijn. Indien je niet aanwezig kan zijn, gelieve dan ten laatste 24u op voorhand telefonisch je afspraak te annuleren.
                     Indien de afspraak niet 24 u op voorhand reden wordt geannuleerd, zal er een administratieve kost worden aangerekend.
                   </p>
@@ -356,42 +406,48 @@
               </h2>
               <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-2">
                 <div class="border-b border-gray-200 bg-white p-5">
-                  <p class="wow fadeInDown text-reviva_d-500">
-                    Er zijn een aantal parkeerplaatsen op de oprit van de praktijk voorzien waar je eenvoudig kan parkeren. Ook de bushalte van de Lijn bevindt zich vlak voor de praktijk (lijn 380 - halte Zielenberg).
-                  </p>
+                  <p class="text-reviva_d-500">Er zijn een aantal parkeerplaatsen op de oprit van de praktijk voorzien waar je eenvoudig kan parkeren. Ook de bushalte van de Lijn bevindt zich vlak voor de praktijk (lijn 380 - halte Zielenberg).</p>
+                </div>
+              </div>
+              <h2 id="accordion-flush-heading-4">
+                <button type="button" class="flex w-full items-center justify-between border-b border-gray-200 px-5 py-5 text-left text-lg" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+                  COVID-19 maatregelen
+                  <svg data-accordion-icon class="h-6 w-6 shrink-0 rotate-180" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                <div class="border-b border-gray-200 bg-white p-5">
+                  <p class="text-reviva_d-500">Wanneer je ziek bent of symptomen hebt (koorts, hoest,...) vragen we je je afspraak te annuleren; dit kan telefonisch of per e-mail.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="wow fadeInDown my-16 text-center">
+          Voor andere vragen:<br />
+          <strong>contacteer <span class="text-reviva_m-500">016 41 42 50</span> - <span class="text-reviva_m-500">info@praktijkreviva.be</span></strong>
+          <div class="mt-3 mb-4">of</div>
+          <a href="https://altagenda.crossuite.com/praktijkreviva/" target="_blank" class="rounded-full bg-reviva_d-500 p-3 px-6 text-sm font-bold uppercase text-white outline-none transition-all duration-150 ease-linear hover:bg-reviva_m-500"
+            >Maak een afspraak</a
+          >
+        </div>
       </section>
 
       <!-- Subscribe Section Start -->
-      <section id="contact" class="pt-24 grid grid-cols-1 text-center sm:grid-cols-2">
+      <section id="contact">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.8033151893596!2d4.798674315922263!3d50.85332636613412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c16614e80351d5%3A0x70118f46ee9400c0!2sPraktijk%20Reviva%20(Kinelovenjoel)!5e0!3m2!1sen!2sbe!4v1656705680646!5m2!1sen!2sbe"
           width="100%"
-          height="600"
+          height="300"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-
-        <div class="my-12 flex items-center justify-center">
-          <div class="text-reviva_d-500">
-            <div class="flex items-center justify-center pb-10">
-              <img class="w-2/5" src="/assets/img/logo_reviva_praktijk.png" alt="" />
-            </div>
-            <p>
-              Tiensesteenweg 350 <br />
-              3360 Bierbeek
-            </p>
-            <p>016 41 42 50</p>
-            <p>info@praktijkreviva.be</p>
-          </div>
-        </div>
       </section>
+
       <!-- Subscribe Section End -->
     </div>
     <!-- Footer Section Start -->

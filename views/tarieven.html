@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+    <title>Praktijk Reviva</title>
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
+    <!-- Tailwind css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- Header Area wrapper Starts -->
+    <div id="header_dropdown"></div>
+    <!-- Header Area wrapper End -->
+
+    <div style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
+      <!-- FAQ Section End -->
+      <section id="welkom" class="bg-reviva_l-500 pb-10" style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
+        <div class="container pt-56">
+          <h2 class="text-3xl leading-none text-reviva_d-500 md:text-left md:text-5xl">Tarieven</h2>
+
+          <!-- Algemene kinesitherapie -->
+          <div id="algemene_kinesitherapie" class="py-24">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div>
+                <p>Hier kan je een overzicht terugvinden van onze diensten en bijhorende tarieven voor <span id="current_year"></span>.</p>
+                <br />
+                <p>
+                  Voor de sessies kinesitherapie en vroedkunde is er gedeeltelijke/volledige terugbetaling voorzien van de mutualiteit. Ook bij de groepslessen is er een eenmalige bijdrage van de mutualiteit mogelijk. Voor meer info hierover kunt u
+                  terecht bij ons op de praktijk of bij de behandelend therapeut.
+                </p>
+                <br />
+                <br />
+                <div class="rounded-xl border-4 border-reviva_m-500 p-12">
+                  <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Kinesitherapie</h2>
+
+                  <ul class="ulist ml-8 mb-12">
+                    <li><strong>Basisbehandeling</strong>: €32</li>
+                    <li><strong>Specifieke behandeling</strong> <br />(manuele therapie, dryneedling, perinatale behandeling): €35</li>
+                    <li><strong>Huisbezoek</strong>: €35</li>
+                  </ul>
+
+                  <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Orthomoleculaire therapie</h2>
+
+                  <ul class="ulist ml-8 mb-12">
+                    <li><strong>Eerste consultatie</strong>: €71 (1 uur)</li>
+                    <li><strong>Tweede consultatie</strong>: €64 (1 uur)</li>
+                    <li><strong>Verdere opvolgingsconsultaties</strong>: €32 (30 minuten)</li>
+                  </ul>
+
+                  <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Groepslessen Yinyoga en TeRUG-in-Actie</h2>
+
+                  <ul class="ulist ml-8 mb-12">
+                    <li><strong>Losse les</strong>: €14</li>
+                    <li><strong>Mini-reeks</strong>: €12 per les</li>
+                    <li><strong>Maxi-reeks</strong>: €10.5 per les</li>
+                  </ul>
+
+                  <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Zwangerschapsyoga</h2>
+                  <p>€13.5 per les (reeks van 6 lessen)</p>
+                  <br />
+
+                  <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Babymassage</h2>
+                  <p>€25 per sessie</p>
+                  <br />
+
+                  <h2 class="mb-4 text-xl font-bold text-reviva_d-500">Buggy bootcamp</h2>
+                  <p>€15 per les</p>
+                  <br />
+                </div>
+              </div>
+              <div class="rounded-full">
+                <img class="mx-auto hidden w-4/5 rounded-full shadow-2xl sm:block" src="/assets/img/kine.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer Section Start -->
+    <div id="footer_component"></div>
+
+    <!-- All js Here -->
+    <script src="/assets/js/wow.js"></script>
+
+    <script src="/assets/js/contact-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/flowbite/dist/flowbite.js"></script>
+    <script>
+      var date = new Date();
+
+      document.getElementById("current_year").innerHTML = date.getFullYear();
+    </script>
+  </body>
+</html>
