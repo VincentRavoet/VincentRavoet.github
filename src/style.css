@@ -177,7 +177,7 @@ p {
 }
 
 .service-title {
-  @apply text-center font-semibold text-sm block mb-3 uppercase;
+  @apply text-center font-semibold text-sm mb-3 uppercase;
 }
 
 .feature-title {
