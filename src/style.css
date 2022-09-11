@@ -48,6 +48,9 @@ b, strong {
   .welcome-text-mobile {
     background: url('/assets/img/team/elien_avatar.png');
   }
+  .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+  }
 }
 
 .quote {
@@ -105,7 +108,7 @@ p {
   @apply text-reviva_m-500 font-semibold cursor-pointer;
 }
 .section-heading {
-  @apply text-4xl font-bold tracking-wide;
+  @apply text-3xl font-bold tracking-wide;
 }
 
 .disciplines {
@@ -262,4 +265,11 @@ p {
 }
 .footer-icon:hover {
   @apply text-white;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: #5BAFA7 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #5BAFA7 !important;
 }

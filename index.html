@@ -22,6 +22,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- Header Area wrapper Starts -->
@@ -96,7 +99,7 @@
 
     <div style="background: linear-gradient(180deg, #e4f2f1 10%, #fffafa 100%)">
       <!-- Hero Area Start -->
-      <section id="home" class="flex flex-wrap items-center justify-center pt-36">
+      <section id="home" class="flex h-screen flex-wrap items-center justify-center py-36">
         <div class="container grid grid-cols-1 lg:grid-cols-2 2xl:px-40">
           <img class="welcome-picture wow fadeInRight hidden rounded-full border-reviva_m-500 shadow-2xl lg:block" src="assets/img/team/team_avatar.png" alt="Logo" data-wow-delay="0.5s" />
           <div class="welcome-text wow fadeInLeft flex items-center justify-center rounded-full lg:shadow-2xl" data-wow-delay="0.5s">
@@ -134,7 +137,7 @@
       <section class="py-24">
         <div class="container">
           <div class="text-center">
-            <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500" data-wow-delay="0.3s">Her-leef!</h2>
+            <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500 sm:text-4xl" data-wow-delay="0.3s">Her-leef!</h2>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -171,9 +174,9 @@
       <section id="disciplines" class="py-24">
         <div class="container">
           <div class="text-center">
-            <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500" data-wow-delay="0.3s">Onze disciplines</h2>
+            <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500 sm:text-4xl" data-wow-delay="0.3s">Onze disciplines</h2>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3">
+          <div class="grid grid-cols-1 sm:grid-cols-3">
             <a href="views/disciplines/kinesitherapie.html" class="discipline">
               <div class="wow fadeInDown m-12" data-wow-delay="0.3s">
                 <div class="icon">
@@ -253,11 +256,64 @@
       <!-- Team Section Start -->
       <div id="team_component"></div>
 
-      <section id="reviews" class="mx-16 py-24 sm:mx-24">
+      <section id="reviews" class="mx-16 py-24">
         <div class="text-center">
-          <h2 class="section-heading wow fadeInDown mb-20 text-reviva_d-500" data-wow-delay="0.3s">Dit zeggen onze patiënten...</h2>
+          <h2 class="section-heading wow fadeInDown mb-20 text-reviva_d-500 sm:text-4xl" data-wow-delay="0.3s">Dit zeggen onze patiënten...</h2>
         </div>
-        <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
+        <div class="sm:mx-14 md:mx-24 lg:mx-32 xl:mx-56 xl:px-56 xxs:mx-6">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper pb-12">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="mx-1 rounded-xl border-4 border-reviva_m-500 p-4 sm:mx-24">
+                  <img class="mb-4" src="/assets/img/5_stars.png" />
+                  <i
+                    >"Ik ben in behandeling geweest bij Lucia tijdens en na mijn beide zwangerschappen. In de laatste maanden van de zwangerschap had ik vaak last van rugpijn. Ze heeft me volledig onderzocht en uiteindelijk was ik met enkele
+                    kinebeurten en de juiste oefeningen snel pijnvrij.<br />
+                    <br />
+                    Ook postnatale begeleiding is super. Ik ben sportief en gemotiveerd om opnieuw te sporten en Lucia weet je te prikkelen met aangepaste oefeningen maar zal ook eerlijk zijn als herstart nog te vroeg is of je over je limiet zou
+                    gaan. Zeer bekwame kinesiste die behandelt met kennis van zaken en ook aangeeft wat buiten haar kennisdomein is en waarvoor je bij een collega moet zijn."
+                  </i>
+                  <br /><br />
+                  <strong>- J. Luyssen</strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mx-1 rounded-xl border-4 border-reviva_m-500 p-4 sm:mx-24">
+                  <img class="mb-4" src="/assets/img/5_stars.png" />
+                  <i
+                    >"Ik ben in behandeling bij Elien De Vos en ik ben echt heel tevreden van haar! Ze staat steeds met een glimlach voor me klaar. Elien geeft me de juiste oefeningen spierversterkende, maar ook ontspanningsoefeningen. De combinatie
+                    van massage en ademhalingsoefeningen helpen mij echt heel goed om blokkades en stress weg te nemen en geven me terug de energie die ik kwijt was. <br /><br />Door Elien haar orthomoleculaire kennis helpt ze mij ontstekingen in
+                    mijn lichaam aan te pakken door de juiste voeding en supplementen in te zetten. Ik volg ook haar Yoga lessen die ze met de grootste passie en gedrevenheid geeft. Kortom een echte top kine!!!"
+                  </i>
+                  <br /><br />
+                  <strong>- S. Buekenhout</strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mx-1 rounded-xl border-4 border-reviva_m-500 p-4 sm:mx-24">
+                  <img class="mb-4" src="/assets/img/5_stars.png" />
+                  <i
+                    >"Een tijd geleden had ik zo'n trekkingen in mijn rechterbeen dat ik moeilijk kon stappen. Blijkbaar sciatic. Een goede vriend van me had me aangeraden om eens op consultatie te gaan bij mevrouw Lucia Vanden Eynde die hem enorm
+                    geholpen had met een gelijkaardig probleem. Ik was helemaal verkocht toen ik reeds na 2 behandelingen met de dry needle therapy helemaal geen pijn meer had en ik weer zonder het minste probleem kon wandelen. <br /><br />Mevrouw
+                    Vanden Eynde weet exact wat ze doet en de resultaten zijn verbluffend. Het was het beste aanbeveling die ik ooit van vrienden heb gekregen en ik ben ondertussen een 100% overtuigde fan van de techniek maar ook van de expertise van
+                    deze dame. "
+                  </i>
+                  <br /><br />
+                  <strong>- G. Schouteet</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
           <div class="rounded-xl border-4 border-reviva_m-500 p-4 shadow-2xl">
             <img class="mb-4" src="/assets/img/5_stars.png" />
             <i
@@ -290,7 +346,7 @@
             <br /><br />
             <strong>- G. Schouteet</strong>
           </div>
-        </div>
+        </div> -->
         <div class="mt-12 text-center">
           <a
             href="https://www.google.com/search?q=praktijk+reviva&rlz=1C1AVFC_enBE772BE773&oq=praktijk+reviva&aqs=chrome..69i57j46i175i199i512j69i59j0i22i30j69i59j69i60j69i61l2.4277j0j7&sourceid=chrome&ie=UTF-8#lrd=0x47c16614e80351d5:0x70118f46ee9400c0,1,,,"
@@ -304,7 +360,7 @@
       <!-- FAQ Section End -->
       <section id="contact" class="container pt-24 text-reviva_d-500">
         <div class="text-center">
-          <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500" data-wow-delay="0.3s">Contact</h2>
+          <h2 class="section-heading wow fadeInDown mb-12 text-reviva_d-500 sm:text-4xl" data-wow-delay="0.3s">Contact</h2>
           <div data-accordion="collapse" class="grid border-gray-200 pt-8 text-left md:grid-cols-2 md:gap-16">
             <div id="accordion-flush" class="wow fadeInDown" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
               <h2 id="accordion-flush-heading-0">
@@ -461,5 +517,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/flowbite/dist/flowbite.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
