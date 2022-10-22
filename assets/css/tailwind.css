@@ -1007,9 +1007,9 @@ input:checked + .toggle-bg{
   margin-right: 4rem;
 }
 
-.mx-24{
-  margin-left: 6rem;
-  margin-right: 6rem;
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .my-32{
@@ -1045,11 +1045,6 @@ input:checked + .toggle-bg{
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-1{
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 
 .mr-auto{
@@ -1118,10 +1113,6 @@ input:checked + .toggle-bg{
 
 .mt-4{
   margin-top: 1rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .block{
@@ -1620,6 +1611,10 @@ input:checked + .toggle-bg{
   padding-top: 2rem;
 }
 
+.pb-12{
+  padding-bottom: 3rem;
+}
+
 .pt-24{
   padding-top: 6rem;
 }
@@ -1630,10 +1625,6 @@ input:checked + .toggle-bg{
 
 .pt-56{
   padding-top: 14rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
 }
 
 .pb-24{
@@ -2253,8 +2244,8 @@ p{
 .nav-item{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .pricing-box{
@@ -2559,22 +2550,18 @@ p{
 
 @media (min-width: 640px){
 
-  .sm\:mx-24{
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
   .sm\:mx-14{
     margin-left: 3.5rem;
     margin-right: 3.5rem;
   }
 
-  .sm\:mb-0{
-    margin-bottom: 0px;
+  .sm\:mx-24{
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
-  .sm\:mb-12{
-    margin-bottom: 3rem;
+  .sm\:mb-0{
+    margin-bottom: 0px;
   }
 
   .sm\:block{
@@ -2768,21 +2755,6 @@ p{
 
 @media (min-width: 1280px){
 
-  .xl\:mx-64{
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-
-  .xl\:mx-80{
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-
-  .xl\:mx-72{
-    margin-left: 18rem;
-    margin-right: 18rem;
-  }
-
   .xl\:mx-56{
     margin-left: 14rem;
     margin-right: 14rem;
@@ -2833,11 +2805,6 @@ p{
 }
 
 @media (min-width: 540px){
-
-  .xxs\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 
   .xxs\:mx-6{
     margin-left: 1.5rem;

@@ -231,7 +231,7 @@ p {
   @apply outline-none;
 }
 .nav-item {
-  @apply my-5 text-sm;
+  @apply my-5 text-base;
 }
 
 .pricing-box {
